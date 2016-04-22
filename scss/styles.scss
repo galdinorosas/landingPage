@@ -1,0 +1,165 @@
+body {
+    font-size: 1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+@font-face {
+    font-family: 'gothamBook';
+    src: url(../../fonts/Gotham-Book.ttf);
+}
+
+@font-face {
+    font-family: 'gothamBold';
+    src: url(../../fonts/Gotham-Bold.ttf);
+}
+
+.navbar-nav > li > a,
+.navbar-brand {
+    padding-top: 8px !important;
+    padding-bottom: 0 !important;
+}
+
+.navbar {
+    min-height: 36px !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+nav.navbar {
+    font-family: 'gothamBook';
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    border-radius: 0px;
+    .navbar-header {
+        div.blueFill {
+            height: 36px;
+            width: 8em;
+            background-color: #2996E7;
+            float: left;
+        }
+        .logoAngle {
+            height: 36px;
+            margin-left: -1em;
+            float: left;
+        }
+        button {
+            border: 0;
+            margin: 0;
+            border-radius: 0px;
+            height: 36px;
+        }
+        .navLogoContainer {
+            color: white;
+            position: absolute;
+            line-height: 2.5em;
+            margin-left: 2.5em;
+            margin-top: 0.5em;
+            float: left;
+            img {
+                width: 12em;
+            }
+        }
+    }
+    div.collapse {
+        border-radius: 0;
+        ul.nav {
+            float: left;
+            margin-right: 4em;
+            li {
+                a {
+                    color: white;
+                }
+                div.searchCircle {
+                    border: 1px solid white;
+                    border-radius: 25px;
+                    height: 22px;
+                    width: 22px;
+                    margin-top: 0.5em;
+                    margin-left: 1.5em;
+                    cursor: pointer;
+                    background: url('../../images/search.png') no-repeat center center;
+                    background-size: 12px 12px;
+                    img {
+                        height: 1.2em;
+                        margin: 0 auto;
+                        display: block;
+                        margin-top: 0.3em;
+                    }
+                }
+                div#searchCollapse {
+                    position: absolute;
+                    margin-left: -9em;
+                    margin-top: 1em;
+                    input{
+                        padding: 0;
+                        border: 0;
+                        border-radius: 15px;
+                        border: 1px solid white;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    div.navbar-collapse {
+        border: 0;
+    }
+}
+
+section.hero {
+    height: 60em;
+    background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../../images/heroBackground.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    .heroStatement{
+        font-size: 1.5em;
+        text-align: center;
+        width: 15em;
+        margin: 0 auto;
+        color: white;
+        margin-top: 10em;
+        span{
+            font-family: 'gothamBold';
+            color: #1D93E9;
+        }
+    }
+
+    .btnWrapper{
+        width: 15em;
+        height: 10em;
+        background-color: pink;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    nav.navbar {
+        div.collapse {
+            ul.nav {
+                float: right;
+            }
+        }
+    }
+}
+
+// .Layer_6 {
+//   background-image: url("Layer 6.png");
+//   position: absolute;
+//   left: 0px;
+//   top: 0px;
+//   width: 1920px;
+//   height: 1155px;
+//   z-index: 1;
+// }

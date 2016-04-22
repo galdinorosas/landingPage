@@ -1,0 +1,119 @@
+body {
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+@font-face {
+  font-family: 'gothamBook';
+  src: url(../../fonts/Gotham-Book.ttf); }
+
+@font-face {
+  font-family: 'gothamBold';
+  src: url(../../fonts/Gotham-Bold.ttf); }
+
+.navbar-nav > li > a,
+.navbar-brand {
+  padding-top: 8px !important;
+  padding-bottom: 0 !important; }
+
+.navbar {
+  min-height: 36px !important; }
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none; }
+
+nav.navbar {
+  font-family: 'gothamBook';
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  border-radius: 0px; }
+  nav.navbar .navbar-header div.blueFill {
+    height: 36px;
+    width: 8em;
+    background-color: #2996E7;
+    float: left; }
+  nav.navbar .navbar-header .logoAngle {
+    height: 36px;
+    margin-left: -1em;
+    float: left; }
+  nav.navbar .navbar-header button {
+    border: 0;
+    margin: 0;
+    border-radius: 0px;
+    height: 36px; }
+  nav.navbar .navbar-header .navLogoContainer {
+    color: white;
+    position: absolute;
+    line-height: 2.5em;
+    margin-left: 2.5em;
+    margin-top: 0.5em;
+    float: left; }
+    nav.navbar .navbar-header .navLogoContainer img {
+      width: 12em; }
+  nav.navbar div.collapse {
+    border-radius: 0; }
+    nav.navbar div.collapse ul.nav {
+      float: left;
+      margin-right: 4em; }
+      nav.navbar div.collapse ul.nav li a {
+        color: white; }
+      nav.navbar div.collapse ul.nav li div.searchCircle {
+        border: 1px solid white;
+        border-radius: 25px;
+        height: 22px;
+        width: 22px;
+        margin-top: 0.5em;
+        margin-left: 1.5em;
+        cursor: pointer;
+        background: url("../../images/search.png") no-repeat center center;
+        background-size: 12px 12px; }
+        nav.navbar div.collapse ul.nav li div.searchCircle img {
+          height: 1.2em;
+          margin: 0 auto;
+          display: block;
+          margin-top: 0.3em; }
+      nav.navbar div.collapse ul.nav li div#searchCollapse {
+        position: absolute;
+        margin-left: -9em;
+        margin-top: 1em; }
+        nav.navbar div.collapse ul.nav li div#searchCollapse input {
+          padding: 0;
+          border: 0;
+          border-radius: 15px;
+          border: 1px solid white;
+          text-align: center; }
+  nav.navbar div.navbar-collapse {
+    border: 0; }
+
+section.hero {
+  height: 60em;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../../images/heroBackground.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  section.hero .heroStatement {
+    font-size: 1.5em;
+    text-align: center;
+    width: 15em;
+    margin: 0 auto;
+    color: white;
+    margin-top: 10em; }
+    section.hero .heroStatement span {
+      font-family: 'gothamBold';
+      color: #1D93E9; }
+  section.hero .btnWrapper {
+    width: 15em;
+    height: 10em;
+    background-color: pink; }
+
+@media only screen and (min-width: 768px) {
+  nav.navbar div.collapse ul.nav {
+    float: right; } }
