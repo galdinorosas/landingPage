@@ -850,5 +850,18 @@ footer {
                 }
             }
         }
+        .partners {
+            h1 {
+                font-size: 2.5em;
+            }
+            .partnersLogos {
+                width: 90em;
+                div.col-xs-3 {
+                    img {
+                        height: 6em;
+                    }
+                }
+            }
+        }
     }
 }

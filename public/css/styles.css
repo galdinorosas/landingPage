@@ -607,4 +607,10 @@ footer {
   .signalBackground div.whatIsSignal .signalWrapper {
     width: 57em; }
     .signalBackground div.whatIsSignal .signalWrapper h1 {
-      font-size: 2.5em; } }
+      font-size: 2.5em; }
+  .signalBackground .partners h1 {
+    font-size: 2.5em; }
+  .signalBackground .partners .partnersLogos {
+    width: 90em; }
+    .signalBackground .partners .partnersLogos div.col-xs-3 img {
+      height: 6em; } }
