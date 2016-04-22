@@ -91,16 +91,16 @@ nav.navbar {
                     width: 12em;
                 }
                 div.searchCircle {
+                    display: none;
                     border: 1px solid white;
-                    border-radius: 25px;
-                    height: 20px;
-                    width: 20px;
-                    margin: -20px 0 0 140px;
                     cursor: pointer;
                     background: url("../../images/search.png") no-repeat center center;
                     background-size: 12px 12px;
                     z-index: 500;
                     position: absolute;
+                    height: 18px;
+                    width: 20px;
+                    margin: -18px 0 0 134px;
                     img {
                         height: 1.2em;
                         margin: 0 auto;
@@ -253,13 +253,6 @@ div.productsContainer {
 }
 
 div.carousel {
-    // background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../../images/haze.png') no-repeat center center fixed;
-    // -webkit-background-size: cover;
-    // -moz-background-size: cover;
-    // -o-background-size: cover;
-    // background-size: cover;
-    // height: 40em;
-    // font-family: "gothamBook";
     div.carousel-inner {
         color: white;
         height: 37.5em;
@@ -621,24 +614,15 @@ footer {
                 float: right;
                 li {
                     div.searchCircle {
+                        display: block;
                         position: relative;
                         margin: 0.6em 0 0 0;
-                        // img {
-                        //     height: 1.2em;
-                        //     margin: 0 auto;
-                        //     display: block;
-                        //     margin-top: 0.3em;
-                        // }
+                        border-radius: 25px;
                     }
                     div#searchCollapse {
                         input {
                             width: 13em;
                             height: 2.25em;
-                        }
-                    }
-                    form {
-                        .mobileSearchBox {
-                            display: none;
                         }
                     }
                     a {
@@ -794,6 +778,9 @@ footer {
     }
     section.media div.videos h1:nth-child(1) {
         padding-top: 0em;
+    }
+    section.media div.papersReleaseContainer div.pressReleases h1 {
+        padding-top: 0;
     }
 }
 

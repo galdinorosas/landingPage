@@ -74,16 +74,16 @@ nav.navbar {
         color: white;
         width: 12em; }
       nav.navbar div.collapse ul.nav li div.searchCircle {
+        display: none;
         border: 1px solid white;
-        border-radius: 25px;
-        height: 20px;
-        width: 20px;
-        margin: -20px 0 0 140px;
         cursor: pointer;
         background: url("../../images/search.png") no-repeat center center;
         background-size: 12px 12px;
         z-index: 500;
-        position: absolute; }
+        position: absolute;
+        height: 18px;
+        width: 20px;
+        margin: -18px 0 0 134px; }
         nav.navbar div.collapse ul.nav li div.searchCircle img {
           height: 1.2em;
           margin: 0 auto;
@@ -479,13 +479,13 @@ footer {
   nav.navbar div.collapse ul.nav {
     float: right; }
     nav.navbar div.collapse ul.nav li div.searchCircle {
+      display: block;
       position: relative;
-      margin: 0.6em 0 0 0; }
+      margin: 0.6em 0 0 0;
+      border-radius: 25px; }
     nav.navbar div.collapse ul.nav li div#searchCollapse input {
       width: 13em;
       height: 2.25em; }
-    nav.navbar div.collapse ul.nav li form .mobileSearchBox {
-      display: none; }
     nav.navbar div.collapse ul.nav li a {
       width: 10em;
       padding: 0; }
@@ -581,7 +581,9 @@ footer {
   footer div.row div.col-sm-3 {
     width: 26%; }
   section.media div.videos h1:nth-child(1) {
-    padding-top: 0em; } }
+    padding-top: 0em; }
+  section.media div.papersReleaseContainer div.pressReleases h1 {
+    padding-top: 0; } }
 
 @media only screen and (min-width: 975px) {
   nav.navbar .navbar-header div.blueFill {
