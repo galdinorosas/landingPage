@@ -88,17 +88,19 @@ nav.navbar {
             li {
                 a {
                     color: white;
+                    width: 12em;
                 }
                 div.searchCircle {
                     border: 1px solid white;
                     border-radius: 25px;
-                    height: 22px;
-                    width: 22px;
-                    margin-top: 0.5em;
-                    margin-left: 1.5em;
+                    height: 20px;
+                    width: 20px;
+                    margin: -20px 0 0 140px;
                     cursor: pointer;
-                    background: url('../../images/search.png') no-repeat center center;
+                    background: url("../../images/search.png") no-repeat center center;
                     background-size: 12px 12px;
+                    z-index: 500;
+                    position: absolute;
                     img {
                         height: 1.2em;
                         margin: 0 auto;
@@ -116,6 +118,19 @@ nav.navbar {
                         border-radius: 15px;
                         border: 1px solid white;
                         text-align: center;
+                    }
+                }
+                form {
+                    input {
+                        width: 15em;
+                        border: 0;
+                        padding: 0;
+                        border-radius: 25px;
+                        height: 20px;
+                        background-color: #CCCCCC;
+                        padding-left: 2em;
+                        margin-left: 1em;
+                        z-index: 1
                     }
                 }
             }
@@ -211,16 +226,43 @@ div.logoBorder {
     }
 }
 
-div.carousel {
+div.products-background {
+    display: none;
+}
+
+div.productsContainer {
     background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../../images/haze.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 30em;
+    height: 40em;
     font-family: "gothamBook";
+    padding-top: 1em;
+    h1 {
+        font-size: 2em;
+        background-color: transparent;
+        position: relative;
+        color: white;
+        margin: 0;
+        margin: 0em auto;
+        display: block;
+        width: 5.75em;
+        font-family: 'gothamXLight'
+    }
+}
+
+div.carousel {
+    // background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../../images/haze.png') no-repeat center center fixed;
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    // background-size: cover;
+    // height: 40em;
+    // font-family: "gothamBook";
     div.carousel-inner {
         color: white;
+        height: 37.5em;
         img {
             height: 12em;
             width: 12em;
@@ -242,6 +284,7 @@ div.carousel {
             margin: 2em auto;
             display: block;
             background-color: #2cae51;
+            margin-bottom: 0em;
         }
         .retail {
             img {
@@ -348,8 +391,8 @@ section.media {
                 display: block;
                 margin: 0 auto;
             }
-            h2:nth-child(2) {
-                font-family: 'gothamBold';
+            .learn {
+                cursor: pointer;
             }
             p {
                 font-family: 'gothamBook';
@@ -389,6 +432,7 @@ section.media {
                 height: 3em;
                 float: left;
                 margin-right: 2em;
+                cursor: pointer;
             }
             div {
                 float: left;
@@ -412,7 +456,160 @@ section.media {
             }
             img {
                 height: 2em;
+                cursor: pointer;
             }
+        }
+    }
+}
+
+.signalBackground {
+    height: 50em;
+    background: url('../../images/signalBackground.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    div.whatIsSignal {
+        width: 100%;
+        height: 32em;
+        background-color: transparent;
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+        .signalWrapper {
+            width: 25em;
+            margin: 0 auto;
+            position: relative;
+            height: 80%;
+            padding-top: 1em;
+            color: white;
+            h1 {
+                font-family: 'gothamXLight';
+                font-size: 2em;
+            }
+            img {
+                height: 6em;
+                margin: 0 auto;
+                display: block;
+            }
+            p {
+                font-family: 'gothamBook';
+            }
+            button {
+                font-family: 'gothamBook';
+                width: 8em;
+                height: 2em;
+                background-color: #1E94EA;
+                border: 0;
+                padding: 0;
+            }
+        }
+    }
+    .partners {
+        color: white;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+        height: 18.1em;
+        padding-top: 2em;
+        // -webkit-filter: blur(5px);
+        // -moz-filter: blur(5px);
+        // -o-filter: blur(5px);
+        // -ms-filter: blur(5px);
+        // filter: blur(5px);
+        h1 {
+            margin-top: 0;
+            font-family: 'gothamXLight';
+            font-size: 2em;
+            text-align: center;
+        }
+        .partnersLogos {
+            width: 28em;
+            margin: 0em auto;
+            padding: 3em 0em;
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            div.col-xs-3 {
+                padding: 0em 0px;
+                img {
+                    height: 2em;
+                    margin: 0 auto;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #A8A8A8;
+    .footerLogoContainer {
+        width: 16em;
+        margin: 0 auto;
+        padding: 1em 0;
+        img {
+            height: 2.5em;
+        }
+        p {
+            font-family: 'gothamXLight';
+            padding-top: 0.5em;
+        }
+    }
+    div.row {
+        margin: 0;
+        .col-sm-3 {
+            margin: 0 auto;
+            display: block;
+            width: 45%;
+        }
+        a {
+            display: block;
+            font-family: 'gothamXLight';
+            color: black;
+            line-height: 1.75em;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .col-sm-3:nth-child(4) {
+            width: 20em;
+            input {
+                float: left;
+                border: 0;
+                padding: 0;
+                background-color: #CCCCCC;
+                height: 2.5em;
+                width: 17em;
+                border-radius: 25px;
+                padding-left: 12px;
+                margin-top: 1em;
+            }
+            div.footerSearchIcon {
+                border: 1px solid #525252;
+                border-radius: 25px;
+                height: 25px;
+                width: 25px;
+                cursor: pointer;
+                background: url("../../images/footerSearchIcon.png") no-repeat center center;
+                background-size: 12px 12px;
+                float: left;
+                margin-left: -2.5em;
+                margin-top: 1em;
+            }
+            .footerMediaLinks {
+                margin: 0 auto;
+                display: block;
+                width: 9em;
+                img {
+                    height: 2em;
+                    cursor: pointer;
+                }
+                img:nth-child(2) {
+                    margin: 2em 1em;
+                }
+            }
+        }
+    }
+    div.copyright {
+        p {
+            text-align: center;
+            margin-bottom: 0;
         }
     }
 }
@@ -422,17 +619,236 @@ section.media {
         div.collapse {
             ul.nav {
                 float: right;
+                li {
+                    div.searchCircle {
+                        position: relative;
+                        margin: 0.6em 0 0 0;
+                        // img {
+                        //     height: 1.2em;
+                        //     margin: 0 auto;
+                        //     display: block;
+                        //     margin-top: 0.3em;
+                        // }
+                    }
+                    div#searchCollapse {
+                        input {
+                            width: 13em;
+                            height: 2.25em;
+                        }
+                    }
+                    form {
+                        .mobileSearchBox {
+                            display: none;
+                        }
+                    }
+                    a {
+                        width: 10em;
+                        padding: 0;
+                    }
+                }
+                li:nth-child(4) {
+                    margin-right: 1.8em;
+                }
+            }
+        }
+    }
+    section.hero {
+        .heroStatement {
+            font-size: 2.25em;
+            text-align: center;
+            width: 25em;
+            margin: 0 auto;
+            color: white;
+            margin-top: 7.5em;
+        }
+        .btnWrapper {
+            button {
+                font-size: 1.2em;
+            }
+        }
+        div.row {
+            div.border {
+                display: none;
+            }
+            img {
+                width: 5em;
+            }
+            div.signals {
+                border-left: 1px solid white;
+                border-right: 1px solid white;
+            }
+        }
+    }
+    div.carousel {
+        display: none;
+    }
+    div.products-background {
+        background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../../images/haze.png') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 30em;
+        font-family: "gothamBook";
+        width: 100%;
+        margin: 0;
+        display: block;
+        div {
+            color: white;
+            img {
+                height: 12em;
+                width: 12em;
+                border-radius: 75px;
+                margin: 2em auto;
+                border: 4px #2cae51 solid;
+                display: block;
+            }
+            p {
+                width: 15em;
+                margin: 0 auto;
+                text-align: left;
+                height: 5em;
+            }
+            button {
+                width: 11em;
+                height: 2.75em;
+                padding: 0;
+                border: 0;
+                font-size: 1.4em;
+                margin: 2em auto;
+                display: block;
+                background-color: #2cae51;
+                margin-bottom: 0;
+            }
+        }
+        .retail {
+            img {
+                border-color: #E9722D;
+            }
+            button {
+                background-color: #E9722D;
+            }
+        }
+        .banks {
+            img {
+                border-color: #EFAA2E;
+            }
+            button {
+                background-color: #EFAA2E;
+            }
+        }
+        .realEstate {
+            img {
+                border-color: #1E94EA;
+            }
+            button {
+                background-color: #1E94EA;
+            }
+        }
+    }
+    .signalBackground {
+        div.whatIsSignal {
+            .signalWrapper {
+                width: 60em;
+                img {
+                    height: 12em;
+                    margin: 8em auto;
+                }
+                button {
+                    font-size: 1.2em;
+                }
+            }
+        }
+        .partners {
+            .partnersLogos {
+                width: 60em;
+                div.col-xs-3 {
+                    img {
+                        height: 4em;
+                    }
+                }
+            }
+            h1 {
+                margin-top: -2em;
+            }
+        }
+    }
+    footer {
+        .footerLogoContainer {
+            margin: 0;
+            margin-left: 4em;
+        }
+        div.row {
+            a {
+                text-align: left;
+                width: 20em;
+                padding-left: 2.5em;
+            }
+            div.col-sm-3:nth-child(4) {
+                margin: -1em 0 0 -4em;
+            }
+            div.col-sm-3 {
+                width: 26%;
+            }
+        }
+    }
+    section.media div.videos h1:nth-child(1) {
+        padding-top: 0em;
+    }
+}
+
+@media only screen and (min-width: 975px) {
+    nav.navbar {
+        .navbar-header {
+            div.blueFill {
+                width: 16em;
+            }
+            .navLogoContainer {
+                margin-left: 8.5em;
+            }
+        }
+    }
+    section.hero {
+        .btnWrapper {
+            width: 20em;
+            button {
+                font-size: 1.4em;
+            }
+        }
+        .heroStatement {
+            margin-top: 5.5em;
+            font-size: 3em;
+        }
+        div.row {
+            p {
+                font-size: 1.1em;
+            }
+        }
+    }
+    div.productsContainer {
+        h1 {
+            font-size: 2.5em;
+        }
+    }
+    div.products-background {
+        div {
+            p {
+                width: 13em;
+                font-size: 1.1em;
+            }
+            button {
+                font-size: 1.6em;
+            }
+        }
+    }
+    .signalBackground {
+        div.whatIsSignal {
+            .signalWrapper {
+                width: 57em;
+                h1 {
+                    font-size: 2.5em;
+                }
             }
         }
     }
 }
-
-// .Layer_6 {
-//   background-image: url("Layer 6.png");
-//   position: absolute;
-//   left: 0px;
-//   top: 0px;
-//   width: 1920px;
-//   height: 1155px;
-//   z-index: 1;
-// }

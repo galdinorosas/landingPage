@@ -53,8 +53,11 @@
                     <a href="#" class="dropdown">News Room</a>
                 </li>
                 <li class="dropdown">
-                    <div class="searchCircle" data-toggle="collapse" href="#searchCollapse" aria-controls="searchCollapse">
-                    </div>
+                    <form method="GET" action="#">
+                        <input class="mobileSearchBox" type="text" placeholder="SEARCH..">
+                        <div class="searchCircle" data-toggle="collapse" href="#searchCollapse" aria-controls="searchCollapse">
+                        </div>
+                    </form>
                     <div class="collapse" id="searchCollapse">
                         <form method="GET" action="#">
                             <input type="text" name="userSearch" value="Search..">
@@ -66,7 +69,8 @@
     </nav>
     <section class="hero container-fluid">
         <div class="heroStatement">
-            <p>DELIVERING INSIGHTS FOR <span> BETTER INVESTMENT</span> DECISION-MAKING</p>
+            <p>DELIVERING INSIGHTS FOR
+                <br /><span> BETTER INVESTMENT</span> DECISION-MAKING</p>
         </div>
         <div class="btnWrapper container">
             <button>What We Do</button>
@@ -79,7 +83,7 @@
             </div>
             <div class="border">
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 signals">
                 <img src="images/signals.png">
                 <h2>SIGNALS</h2>
                 <p>Notication of events that matter.</p>
@@ -99,28 +103,29 @@
         <img src="images/logoAngleBot.png">
     </div>
     <div class="productsContainer">
-        <!--   <div class="products-background">
-        <div>
-            <img src="#">
-            <p>personalize your own signals + maps, perform trend analysis and more</p>
-            <button>energy</button>
+        <h1 class="productsTitle">PRODUCTS</h1>
+        <div class="products-background row">
+            <div class="col-sm-3">
+                <img class="img-rounded" src="images/productsEnergy.jpg">
+                <p>Personalize your own signals + maps, perform trend analysis and more.</p>
+                <button type="button">ENERGY</button>
+            </div>
+            <div class="item retail col-sm-3">
+                <img class="img-rounded" src="images/productsRetail.jpg">
+                <p>The data, signals + visualizations you need to make optimal investment decisions in consumer retail.</p>
+                <button type="button">RETAIL</button>
+            </div>
+            <div class="item banks col-sm-3">
+                <img class="img-rounded" src="images/productsBanks.jpg">
+                <p>Discover which banks have accelerating revenue growth and why.</p>
+                <button type="button">BANKS</button>
+            </div>
+            <div class="item realEstate col-sm-3">
+                <img class="img-rounded" src="images/productsRealEstate.jpg">
+                <p>Filter out the noise of the day-to-day trading and discover poignant, less obvious relationships in your REIT universe.</p>
+                <button type="button">REAL ESTATE</button>
+            </div>
         </div>
-        <div>
-            <img src="#">
-            <p>lorem ipsum test dsklfasldkjflnblkas flkasdjf ksadfkl ;dskldsa jflkasd fklsadj</p>
-            <button>retail</button>
-        </div>
-        <div>
-            <img src="#">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <button>banks</button>
-        </div>
-        <div>
-            <img src="#">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <button>real estate</button>
-        </div>
-    </div> -->
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -133,25 +138,24 @@
             <div class="carousel-inner" role="listbox">
                 <div class="item active energy">
                     <img class="img-rounded" src="images/productsEnergy.jpg">
-                    <p>personalize your own signals + maps, perform trend analysis and more</p>
+                    <p>Personalize your own signals + maps, perform trend analysis and more.</p>
                     <button type="button">ENERGY</button>
                 </div>
                 <div class="item retail">
                     <img class="img-rounded" src="images/productsRetail.jpg">
-                    <p>lorem ipsum test dsklfasldkjflnblkas flkasdjf ksadfkl ;dskldsa jflkasd fklsadj</p>
+                    <p>The data, signals + visualizations you need to make optimal investment decisions in consumer retail.</p>
                     <button type="button">RETAIL</button>
                 </div>
                 <div class="item banks">
                     <img class="img-rounded" src="images/productsBanks.jpg">
-                    <p>lorem ipsum test dsklfasldkjflnblkas flkasdjf ksadfkl ;dskldsa jflkasd fklsadj</p>
+                    <p>Discover which banks have accelerating revenue growth and why.</p>
                     <button type="button">BANKS</button>
                 </div>
                 <div class="item realEstate">
                     <img class="img-rounded" src="images/productsRealEstate.jpg">
-                    <p>lorem ipsum test dsklfasldkjflnblkas flkasdjf ksadfkl ;dskldsa jflkasd fklsadj</p>
+                    <p>Filter out the noise of the day-to-day trading and discover poignant, less obvious relationships in your REIT universe.</p>
                     <button type="button">REAL ESTATE</button>
                 </div>
-                ...
             </div>
             <!-- Controls -->
             <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -201,7 +205,7 @@
                 <h1>PRESS RELEASES</h1>
                 <h2>1st PAAS For Real Estate Finacial Insight</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <h2>Learn More</h2>
+                <h2 class="learn">Learn More</h2>
             </div>
         </div>
         <div class="videos col-sm-4">
@@ -238,69 +242,73 @@
     </section>
     <div class="signalBackground">
         <div class="whatIsSignal">
-            <div>
-                <img src="#">
-            </div>
-            <div>
-                <h1>WHAT IS A SIGNAL?</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <button>Learn More</button>
+            <div class="signalWrapper row">
+                <div class="col-sm-6">
+                    <img src="images/signal.png">
+                </div>
+                <div class="col-sm-6">
+                    <h1>WHAT IS A SIGNAL?</h1>
+                    <p>How do you filter relevant data from an overload of data noise? Scouring masses of information for the alpha-generating nugget you care about can be like searching for a need in a haystack. DISCERN's signals streamline the process. Want to be alerted as new wells are drilled on behalf on behalf of a given company, or when a stock of your watchlist changes by two standard deviations? Turbocharge your awareness with Signals as a service&reg;.</p>
+                    <button type="button">Learn More</button>
+                </div>
             </div>
         </div>
         <div class="partners">
             <h1>OUR PARTNERS</h1>
-            <div class="partnersLogos">
-                <div>
-                    <img src="#">
+            <div class="partnersLogos row">
+                <div class="col-xs-3">
+                    <img src="images/partnersBuild.png">
                 </div>
-                <div>
-                    <img src="#">
+                <div class="col-xs-3">
+                    <img src="images/partnersSNL.png">
                 </div>
-                <div>
-                    <img src="#">
+                <div class="col-xs-3">
+                    <img src="images/partnersAlpha.png">
                 </div>
-                <div>
-                    <img src="#">
+                <div class="col-xs-3">
+                    <img src="images/partnersAltos.png">
                 </div>
             </div>
         </div>
     </div>
     <footer>
-        <div>
-            LOGO
-            <img src="#">
+        <div class="footerLogoContainer">
+            <img src="images/footerLogo.png">
+            <p>INSIGHTS AS A SERVICE</p>
         </div>
-        <div class="firstFooterCol">
-            <p>Lorem ipsum dolor sit amet, c.</p>
-            <p>Lorem ipsum dolor sit amet, c.</p>
-            <p>Lorem ipsum dolor sit amet, c.</p>
-            <p>Lorem ipsum dolor sit amet, c.</p>
-        </div>
-        <div class="secondFooterCol">
-            <p>Lorem ipsum dolor sit amet, c.</p>
-            <p>Lorem ipsum dolor sit amet, c.</p>
-            <p>Lorem ipsum dolor sit amet, c.</p>
-            <p>Lorem ipsum dolor sit amet, c.</p>
-        </div>
-        <div class="thirdFooterCol">
-            <p>Lorem ipsum dolor sit amet, c.</p>
-            <p>Lorem ipsum dolor sit amet, c.</p>
-            <p>Lorem ipsum dolor sit amet, c.</p>
-            <p>Lorem ipsum dolor sit amet, c.</p>
-        </div>
-        <div>
-            <form method="GET" action="#">
-                <input type="text">
-                <img src="#">
-            </form>
-            <div class="footerMediaLinks">
-                <img src="#">
-                <img src="#">
-                <img src="#">
+        <div class="row">
+            <div class="firstFooterCol col-sm-3">
+                <a>THE DISCERN STORY</a>
+                <a>ENTERPRISE</a>
+                <a>DISCERN SECURITIES/TRADING</a>
+                <a>CAREERS</a>
+            </div>
+            <div class="secondFooterCol col-sm-3">
+                <a>CONTACT</a>
+                <a>PEOPLE</a>
+                <a>DATA PARTNERS</a>
+                <a>BLOG</a>
+            </div>
+            <div class="thirdFooterCol col-sm-3">
+                <a>NEWSROOM</a>
+                <a>OFFICES</a>
+                <a>TERMS OF USE</a>
+                <a>REQUEST A DEMO</a>
+            </div>
+            <div class="col-sm-3">
+                <form method="GET" action="#">
+                    <input type="text" placeholder="SEARCH..">
+                    <div class="footerSearchIcon"></div>
+                </form>
+                <div class="footerMediaLinks">
+                    <img src="images/footerFacebook.png">
+                    <img src="images/footerTwitter.png">
+                    <img src="images/footerLinkedin.png">
+                </div>
             </div>
         </div>
         <div class="copyright">
-            <p>Lorem ipsum dolor sit amet, c.</p>
+            <p>COPYRIGHT &copy; 2016 ALL RIGHTS RESERVED</p>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>

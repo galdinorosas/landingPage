@@ -71,17 +71,19 @@ nav.navbar {
       float: left;
       margin-right: 4em; }
       nav.navbar div.collapse ul.nav li a {
-        color: white; }
+        color: white;
+        width: 12em; }
       nav.navbar div.collapse ul.nav li div.searchCircle {
         border: 1px solid white;
         border-radius: 25px;
-        height: 22px;
-        width: 22px;
-        margin-top: 0.5em;
-        margin-left: 1.5em;
+        height: 20px;
+        width: 20px;
+        margin: -20px 0 0 140px;
         cursor: pointer;
         background: url("../../images/search.png") no-repeat center center;
-        background-size: 12px 12px; }
+        background-size: 12px 12px;
+        z-index: 500;
+        position: absolute; }
         nav.navbar div.collapse ul.nav li div.searchCircle img {
           height: 1.2em;
           margin: 0 auto;
@@ -97,6 +99,16 @@ nav.navbar {
           border-radius: 15px;
           border: 1px solid white;
           text-align: center; }
+      nav.navbar div.collapse ul.nav li form input {
+        width: 15em;
+        border: 0;
+        padding: 0;
+        border-radius: 25px;
+        height: 20px;
+        background-color: #CCCCCC;
+        padding-left: 2em;
+        margin-left: 1em;
+        z-index: 1; }
   nav.navbar div.navbar-collapse {
     border: 0; }
 
@@ -165,47 +177,64 @@ div.logoBorder {
     float: right;
     margin-right: -2em; }
 
-div.carousel {
+div.products-background {
+  display: none; }
+
+div.productsContainer {
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../../images/haze.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 30em;
-  font-family: "gothamBook"; }
-  div.carousel div.carousel-inner {
-    color: white; }
-    div.carousel div.carousel-inner img {
-      height: 12em;
-      width: 12em;
-      border-radius: 75px;
-      margin: 2em auto;
-      border: 4px #2cae51 solid; }
-    div.carousel div.carousel-inner p {
-      width: 20em;
-      margin: 0 auto;
-      text-align: center; }
-    div.carousel div.carousel-inner button {
-      width: 12em;
-      height: 3em;
-      padding: 0;
-      border: 0;
-      font-size: 1.4em;
-      margin: 2em auto;
-      display: block;
-      background-color: #2cae51; }
-    div.carousel div.carousel-inner .retail img {
-      border-color: #E9722D; }
-    div.carousel div.carousel-inner .retail button {
-      background-color: #E9722D; }
-    div.carousel div.carousel-inner .banks img {
-      border-color: #EFAA2E; }
-    div.carousel div.carousel-inner .banks button {
-      background-color: #EFAA2E; }
-    div.carousel div.carousel-inner .realEstate img {
-      border-color: #1E94EA; }
-    div.carousel div.carousel-inner .realEstate button {
-      background-color: #1E94EA; }
+  height: 40em;
+  font-family: "gothamBook";
+  padding-top: 1em; }
+  div.productsContainer h1 {
+    font-size: 2em;
+    background-color: transparent;
+    position: relative;
+    color: white;
+    margin: 0;
+    margin: 0em auto;
+    display: block;
+    width: 5.75em;
+    font-family: 'gothamXLight'; }
+
+div.carousel div.carousel-inner {
+  color: white;
+  height: 37.5em; }
+  div.carousel div.carousel-inner img {
+    height: 12em;
+    width: 12em;
+    border-radius: 75px;
+    margin: 2em auto;
+    border: 4px #2cae51 solid; }
+  div.carousel div.carousel-inner p {
+    width: 20em;
+    margin: 0 auto;
+    text-align: center; }
+  div.carousel div.carousel-inner button {
+    width: 12em;
+    height: 3em;
+    padding: 0;
+    border: 0;
+    font-size: 1.4em;
+    margin: 2em auto;
+    display: block;
+    background-color: #2cae51;
+    margin-bottom: 0em; }
+  div.carousel div.carousel-inner .retail img {
+    border-color: #E9722D; }
+  div.carousel div.carousel-inner .retail button {
+    background-color: #E9722D; }
+  div.carousel div.carousel-inner .banks img {
+    border-color: #EFAA2E; }
+  div.carousel div.carousel-inner .banks button {
+    background-color: #EFAA2E; }
+  div.carousel div.carousel-inner .realEstate img {
+    border-color: #1E94EA; }
+  div.carousel div.carousel-inner .realEstate button {
+    background-color: #1E94EA; }
 
 section.media {
   margin: 0;
@@ -271,8 +300,8 @@ section.media {
         width: 21em;
         display: block;
         margin: 0 auto; }
-      section.media div.papersReleaseContainer div.pressReleases h2:nth-child(2) {
-        font-family: 'gothamBold'; }
+      section.media div.papersReleaseContainer div.pressReleases .learn {
+        cursor: pointer; }
       section.media div.papersReleaseContainer div.pressReleases p {
         font-family: 'gothamBook';
         width: 26.75em;
@@ -306,7 +335,8 @@ section.media {
       section.media div.videos div.whatWeDo img {
         height: 3em;
         float: left;
-        margin-right: 2em; }
+        margin-right: 2em;
+        cursor: pointer; }
       section.media div.videos div.realEstateWebinar div,
       section.media div.videos div.whatWeDo div {
         float: left;
@@ -323,8 +353,258 @@ section.media {
       width: 15em;
       margin: 0 auto; }
     section.media div.videos div.videosFooter img {
-      height: 2em; }
+      height: 2em;
+      cursor: pointer; }
+
+.signalBackground {
+  height: 50em;
+  background: url("../../images/signalBackground.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .signalBackground div.whatIsSignal {
+    width: 100%;
+    height: 32em;
+    background-color: transparent;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); }
+    .signalBackground div.whatIsSignal .signalWrapper {
+      width: 25em;
+      margin: 0 auto;
+      position: relative;
+      height: 80%;
+      padding-top: 1em;
+      color: white; }
+      .signalBackground div.whatIsSignal .signalWrapper h1 {
+        font-family: 'gothamXLight';
+        font-size: 2em; }
+      .signalBackground div.whatIsSignal .signalWrapper img {
+        height: 6em;
+        margin: 0 auto;
+        display: block; }
+      .signalBackground div.whatIsSignal .signalWrapper p {
+        font-family: 'gothamBook'; }
+      .signalBackground div.whatIsSignal .signalWrapper button {
+        font-family: 'gothamBook';
+        width: 8em;
+        height: 2em;
+        background-color: #1E94EA;
+        border: 0;
+        padding: 0; }
+  .signalBackground .partners {
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    height: 18.1em;
+    padding-top: 2em; }
+    .signalBackground .partners h1 {
+      margin-top: 0;
+      font-family: 'gothamXLight';
+      font-size: 2em;
+      text-align: center; }
+    .signalBackground .partners .partnersLogos {
+      width: 28em;
+      margin: 0em auto;
+      padding: 3em 0em;
+      border-top: 1px solid white;
+      border-bottom: 1px solid white; }
+      .signalBackground .partners .partnersLogos div.col-xs-3 {
+        padding: 0em 0px; }
+        .signalBackground .partners .partnersLogos div.col-xs-3 img {
+          height: 2em;
+          margin: 0 auto;
+          display: block; }
+
+footer {
+  background-color: #A8A8A8; }
+  footer .footerLogoContainer {
+    width: 16em;
+    margin: 0 auto;
+    padding: 1em 0; }
+    footer .footerLogoContainer img {
+      height: 2.5em; }
+    footer .footerLogoContainer p {
+      font-family: 'gothamXLight';
+      padding-top: 0.5em; }
+  footer div.row {
+    margin: 0; }
+    footer div.row .col-sm-3 {
+      margin: 0 auto;
+      display: block;
+      width: 45%; }
+    footer div.row a {
+      display: block;
+      font-family: 'gothamXLight';
+      color: black;
+      line-height: 1.75em;
+      text-align: center;
+      cursor: pointer;
+      text-decoration: none; }
+    footer div.row .col-sm-3:nth-child(4) {
+      width: 20em; }
+      footer div.row .col-sm-3:nth-child(4) input {
+        float: left;
+        border: 0;
+        padding: 0;
+        background-color: #CCCCCC;
+        height: 2.5em;
+        width: 17em;
+        border-radius: 25px;
+        padding-left: 12px;
+        margin-top: 1em; }
+      footer div.row .col-sm-3:nth-child(4) div.footerSearchIcon {
+        border: 1px solid #525252;
+        border-radius: 25px;
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+        background: url("../../images/footerSearchIcon.png") no-repeat center center;
+        background-size: 12px 12px;
+        float: left;
+        margin-left: -2.5em;
+        margin-top: 1em; }
+      footer div.row .col-sm-3:nth-child(4) .footerMediaLinks {
+        margin: 0 auto;
+        display: block;
+        width: 9em; }
+        footer div.row .col-sm-3:nth-child(4) .footerMediaLinks img {
+          height: 2em;
+          cursor: pointer; }
+        footer div.row .col-sm-3:nth-child(4) .footerMediaLinks img:nth-child(2) {
+          margin: 2em 1em; }
+  footer div.copyright p {
+    text-align: center;
+    margin-bottom: 0; }
 
 @media only screen and (min-width: 768px) {
   nav.navbar div.collapse ul.nav {
-    float: right; } }
+    float: right; }
+    nav.navbar div.collapse ul.nav li div.searchCircle {
+      position: relative;
+      margin: 0.6em 0 0 0; }
+    nav.navbar div.collapse ul.nav li div#searchCollapse input {
+      width: 13em;
+      height: 2.25em; }
+    nav.navbar div.collapse ul.nav li form .mobileSearchBox {
+      display: none; }
+    nav.navbar div.collapse ul.nav li a {
+      width: 10em;
+      padding: 0; }
+    nav.navbar div.collapse ul.nav li:nth-child(4) {
+      margin-right: 1.8em; }
+  section.hero .heroStatement {
+    font-size: 2.25em;
+    text-align: center;
+    width: 25em;
+    margin: 0 auto;
+    color: white;
+    margin-top: 7.5em; }
+  section.hero .btnWrapper button {
+    font-size: 1.2em; }
+  section.hero div.row div.border {
+    display: none; }
+  section.hero div.row img {
+    width: 5em; }
+  section.hero div.row div.signals {
+    border-left: 1px solid white;
+    border-right: 1px solid white; }
+  div.carousel {
+    display: none; }
+  div.products-background {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../../images/haze.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 30em;
+    font-family: "gothamBook";
+    width: 100%;
+    margin: 0;
+    display: block; }
+    div.products-background div {
+      color: white; }
+      div.products-background div img {
+        height: 12em;
+        width: 12em;
+        border-radius: 75px;
+        margin: 2em auto;
+        border: 4px #2cae51 solid;
+        display: block; }
+      div.products-background div p {
+        width: 15em;
+        margin: 0 auto;
+        text-align: left;
+        height: 5em; }
+      div.products-background div button {
+        width: 11em;
+        height: 2.75em;
+        padding: 0;
+        border: 0;
+        font-size: 1.4em;
+        margin: 2em auto;
+        display: block;
+        background-color: #2cae51;
+        margin-bottom: 0; }
+    div.products-background .retail img {
+      border-color: #E9722D; }
+    div.products-background .retail button {
+      background-color: #E9722D; }
+    div.products-background .banks img {
+      border-color: #EFAA2E; }
+    div.products-background .banks button {
+      background-color: #EFAA2E; }
+    div.products-background .realEstate img {
+      border-color: #1E94EA; }
+    div.products-background .realEstate button {
+      background-color: #1E94EA; }
+  .signalBackground div.whatIsSignal .signalWrapper {
+    width: 60em; }
+    .signalBackground div.whatIsSignal .signalWrapper img {
+      height: 12em;
+      margin: 8em auto; }
+    .signalBackground div.whatIsSignal .signalWrapper button {
+      font-size: 1.2em; }
+  .signalBackground .partners .partnersLogos {
+    width: 60em; }
+    .signalBackground .partners .partnersLogos div.col-xs-3 img {
+      height: 4em; }
+  .signalBackground .partners h1 {
+    margin-top: -2em; }
+  footer .footerLogoContainer {
+    margin: 0;
+    margin-left: 4em; }
+  footer div.row a {
+    text-align: left;
+    width: 20em;
+    padding-left: 2.5em; }
+  footer div.row div.col-sm-3:nth-child(4) {
+    margin: -1em 0 0 -4em; }
+  footer div.row div.col-sm-3 {
+    width: 26%; }
+  section.media div.videos h1:nth-child(1) {
+    padding-top: 0em; } }
+
+@media only screen and (min-width: 975px) {
+  nav.navbar .navbar-header div.blueFill {
+    width: 16em; }
+  nav.navbar .navbar-header .navLogoContainer {
+    margin-left: 8.5em; }
+  section.hero .btnWrapper {
+    width: 20em; }
+    section.hero .btnWrapper button {
+      font-size: 1.4em; }
+  section.hero .heroStatement {
+    margin-top: 5.5em;
+    font-size: 3em; }
+  section.hero div.row p {
+    font-size: 1.1em; }
+  div.productsContainer h1 {
+    font-size: 2.5em; }
+  div.products-background div p {
+    width: 13em;
+    font-size: 1.1em; }
+  div.products-background div button {
+    font-size: 1.6em; }
+  .signalBackground div.whatIsSignal .signalWrapper {
+    width: 57em; }
+    .signalBackground div.whatIsSignal .signalWrapper h1 {
+      font-size: 2.5em; } }
