@@ -17,6 +17,10 @@ body {
   font-family: 'gothamXLight';
   src: url(../../fonts/Gotham-XLight.ttf); }
 
+@font-face {
+  font-family: 'gothamMedium';
+  src: url(../../fonts/Gotham-Medium.ttf); }
+
 .navbar-nav > li > a,
 .navbar-brand {
   padding-top: 8px !important;
@@ -203,11 +207,123 @@ div.carousel {
     div.carousel div.carousel-inner .realEstate button {
       background-color: #1E94EA; }
 
-section.media div.newsRoom {
-  font-family: 'gothamXLight'; }
-  section.media div.newsRoom h1 {
-    text-align: center;
-    font-size: 3em; }
+section.media {
+  margin: 0;
+  color: black; }
+  section.media div.col-sm-4 {
+    padding: 0; }
+  section.media div.newsRoom {
+    font-family: 'gothamXLight';
+    height: 28em; }
+    section.media div.newsRoom div {
+      width: 20em;
+      margin: 0 auto; }
+    section.media div.newsRoom h1 {
+      text-align: center;
+      font-size: 2em; }
+    section.media div.newsRoom h2 {
+      font-size: 1.5em;
+      font-family: 'gothamBold'; }
+  section.media div.papersReleaseContainer {
+    background-color: #2B2B2B;
+    color: white;
+    height: 28em; }
+    section.media div.papersReleaseContainer div.whitePapers {
+      height: 14em; }
+      section.media div.papersReleaseContainer div.whitePapers div.paperIconContainer {
+        margin: 0 auto;
+        display: block;
+        width: 22em; }
+      section.media div.papersReleaseContainer div.whitePapers div.wrapper {
+        width: 30em;
+        display: block;
+        margin: 0 auto;
+        margin-top: 7em; }
+        section.media div.papersReleaseContainer div.whitePapers div.wrapper div:nth-child(2) {
+          border-left: 1px solid white;
+          padding-left: 2em; }
+        section.media div.papersReleaseContainer div.whitePapers div.wrapper div {
+          width: 15em;
+          float: left;
+          padding: 1em;
+          font-family: 'gothamMedium'; }
+      section.media div.papersReleaseContainer div.whitePapers h1 {
+        text-align: center;
+        font-size: 2em;
+        width: 8em;
+        float: right;
+        font-family: 'gothamXLight'; }
+      section.media div.papersReleaseContainer div.whitePapers img {
+        float: left;
+        height: 3em;
+        margin-top: 1.5em; }
+    section.media div.papersReleaseContainer div.pressReleases {
+      background-color: #9E9E9E;
+      height: 14em; }
+      section.media div.papersReleaseContainer div.pressReleases h1 {
+        font-family: 'gothamXLight';
+        font-size: 2em;
+        text-align: center;
+        padding-top: 0.5em; }
+      section.media div.papersReleaseContainer div.pressReleases h2 {
+        font-family: 'gothamMedium';
+        font-size: 1.15em;
+        width: 21em;
+        display: block;
+        margin: 0 auto; }
+      section.media div.papersReleaseContainer div.pressReleases h2:nth-child(2) {
+        font-family: 'gothamBold'; }
+      section.media div.papersReleaseContainer div.pressReleases p {
+        font-family: 'gothamBook';
+        width: 26.75em;
+        display: block;
+        margin: 0.5em auto;
+        font-size: 0.9em; }
+  section.media div.videos {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../../images/videos.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 0% 83%;
+    height: 28em;
+    color: white; }
+    section.media div.videos h1:nth-child(1) {
+      font-family: 'gothamXLight';
+      text-align: center;
+      font-size: 2em;
+      padding-top: 0.5em; }
+    section.media div.videos h2 {
+      font-family: 'gothamBold';
+      font-size: 1.15em;
+      margin-top: 0; }
+    section.media div.videos div.realEstateWebinar,
+    section.media div.videos div.whatWeDo {
+      width: 25em;
+      height: 7em;
+      margin: 0 auto; }
+      section.media div.videos div.realEstateWebinar img,
+      section.media div.videos div.whatWeDo img {
+        height: 3em;
+        float: left;
+        margin-right: 2em; }
+      section.media div.videos div.realEstateWebinar div,
+      section.media div.videos div.whatWeDo div {
+        float: left;
+        width: 20em; }
+        section.media div.videos div.realEstateWebinar div p,
+        section.media div.videos div.whatWeDo div p {
+          font-family: 'gothamXLight';
+          font-size: 0.9em; }
+    section.media div.videos div.whatWeDo {
+      border-bottom: 1px solid white; }
+    section.media div.videos div.videosFooter h1 {
+      margin-top: 0.5em; }
+    section.media div.videos div.videosFooter div.row {
+      width: 15em;
+      margin: 0 auto; }
+    section.media div.videos div.videosFooter img {
+      height: 2em; }
 
 @media only screen and (min-width: 768px) {
   nav.navbar div.collapse ul.nav {
