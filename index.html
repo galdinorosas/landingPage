@@ -69,26 +69,37 @@
             <p>DELIVERING INSIGHTS FOR <span> BETTER INVESTMENT</span> DECISION-MAKING</p>
         </div>
         <div class="btnWrapper container">
-            <button></button>
+            <button>What We Do</button>
         </div>
-        <div>
-            <img src="#">
-            <h2>DATA</h2>
-            <p>All relevant information in one location.</p>
-        </div>
-        <div>
-            <img src="#">
-            <h2>SIGNALS</h2>
-            <p>Notication of events that matter.</p>
-        </div>
-        <div>
-            <img src="#">
-            <h2>INSIGHT</h2>
-            <p>Immediate perspective on companies you care about.</p>
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="images/data.png">
+                <h2>DATA</h2>
+                <p>All relevant information in one location.</p>
+            </div>
+            <div class="border">
+            </div>
+            <div class="col-sm-4">
+                <img src="images/signals.png">
+                <h2>SIGNALS</h2>
+                <p>Notication of events that matter.</p>
+            </div>
+            <div class="border">
+            </div>
+            <div class="col-sm-4">
+                <img src="images/insight.png">
+                <h2>INSIGHT</h2>
+                <p>Immediate perspective on companies you care about.</p>
+            </div>
         </div>
     </section>
-    <!-- start -->
-    <!-- <!-- <div class="products-background">
+    <div class="logoBorder">
+        <div class="logoColor">
+        </div>
+        <img src="images/logoAngleBot.png">
+    </div>
+    <div class="productsContainer">
+        <!--   <div class="products-background">
         <div>
             <img src="#">
             <p>personalize your own signals + maps, perform trend analysis and more</p>
@@ -109,10 +120,52 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <button>real estate</button>
         </div>
+    </div> -->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active energy">
+                    <img class="img-rounded" src="images/productsEnergy.jpg">
+                    <p>personalize your own signals + maps, perform trend analysis and more</p>
+                    <button type="button">ENERGY</button>
+                </div>
+                <div class="item retail">
+                    <img class="img-rounded" src="images/productsRetail.jpg">
+                    <p>lorem ipsum test dsklfasldkjflnblkas flkasdjf ksadfkl ;dskldsa jflkasd fklsadj</p>
+                    <button type="button">RETAIL</button>
+                </div>
+                <div class="item banks">
+                    <img class="img-rounded" src="images/productsBanks.jpg">
+                    <p>lorem ipsum test dsklfasldkjflnblkas flkasdjf ksadfkl ;dskldsa jflkasd fklsadj</p>
+                    <button type="button">BANKS</button>
+                </div>
+                <div class="item realEstate">
+                    <img class="img-rounded" src="images/productsRealEstate.jpg">
+                    <p>lorem ipsum test dsklfasldkjflnblkas flkasdjf ksadfkl ;dskldsa jflkasd fklsadj</p>
+                    <button type="button">REAL ESTATE</button>
+                </div>
+                ...
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
     </div>
-    <!-- end-->
-<!--     <section class="media">
-        <div class="newsRoom">
+    <section class="media row">
+        <div class="newsRoom col-sm-4">
             <h1>NEWSROOM</h1>
             <div class="realEstate">
                 <h2>REAL ESTATE</h2>
@@ -129,22 +182,24 @@
                 <P>The Low Velocity Economy Continues</P>
             </div>
         </div>
-        <div class="whitePapers">
-            <h1>WHITE PAPERS</h1>
-            <div>
-                <p>CGIS Reclassification & Why you should Care</p>
+        <div class="papersReleaseContainer col-sm-4">
+            <div class="whitePapers">
+                <h1>WHITE PAPERS</h1>
+                <div>
+                    <p>CGIS Reclassification & Why you should Care</p>
+                </div>
+                <div>
+                    <p>REITS Reclassification Redux</p>
+                </div>
             </div>
-            <div>
-                <p>REITS Reclassification Redux</p>
+            <div class="pressReleases">
+                <h1>PRESS RELEASES</h1>
+                <h2>1st PAAS For Real Estate Finacial Insight</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h2>Learn More</h2>
             </div>
         </div>
-        <div class="pressReleases">
-            <h1>PRESS RELEASES</h1>
-            <h2>1st PAAS For Real Estate Finacial Insight</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <h2>Learn More</h2>
-        </div>
-        <div class="videos">
+        <div class="videos col-sm-4">
             <h1>VIDEOS</h1>
             <div class="realEstateWebinar">
                 <img src="#">
@@ -170,72 +225,72 @@
             </div>
         </div>
     </section>
-    <div class="whatIsSignal">
+    <!-- <div class="whatIsSignal">
+    <div>
+        <img src="#">
+    </div>
+    <div>
+        <h1>WHAT IS A SIGNAL?</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <button>Learn More</button>
+    </div>
+</div>
+<div class="partners">
+    <h1>OUR PARTNERS</h1>
+    <div class="partnersLogos">
         <div>
             <img src="#">
         </div>
         <div>
-            <h1>WHAT IS A SIGNAL?</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <button>Learn More</button>
-        </div>
-    </div>
-    <div class="partners">
-        <h1>OUR PARTNERS</h1>
-        <div class="partnersLogos">
-            <div>
-                <img src="#">
-            </div>
-            <div>
-                <img src="#">
-            </div>
-            <div>
-                <img src="#">
-            </div>
-            <div>
-                <img src="#">
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div>
-            LOGO
             <img src="#">
         </div>
-        <div class="firstFooterCol">
-            <p>Lorem ipsum dolor sit amet, c.</p>
-            <p>Lorem ipsum dolor sit amet, c.</p>
-            <p>Lorem ipsum dolor sit amet, c.</p>
-            <p>Lorem ipsum dolor sit amet, c.</p>
-        </div>
-        <div class="secondFooterCol">
-            <p>Lorem ipsum dolor sit amet, c.</p>
-            <p>Lorem ipsum dolor sit amet, c.</p>
-            <p>Lorem ipsum dolor sit amet, c.</p>
-            <p>Lorem ipsum dolor sit amet, c.</p>
-        </div>
-        <div class="thirdFooterCol">
-            <p>Lorem ipsum dolor sit amet, c.</p>
-            <p>Lorem ipsum dolor sit amet, c.</p>
-            <p>Lorem ipsum dolor sit amet, c.</p>
-            <p>Lorem ipsum dolor sit amet, c.</p>
+        <div>
+            <img src="#">
         </div>
         <div>
-            <form method="GET" action="#">
-                <input type="text">
-                <img src="#">
-            </form>
-            <div class="footerMediaLinks">
-                <img src="#">
-                <img src="#">
-                <img src="#">
-            </div>
+            <img src="#">
         </div>
-
-        <div class="copyright">
-            <p>Lorem ipsum dolor sit amet, c.</p>
+    </div>
+</div>
+<footer>
+    <div>
+        LOGO
+        <img src="#">
+    </div>
+    <div class="firstFooterCol">
+        <p>Lorem ipsum dolor sit amet, c.</p>
+        <p>Lorem ipsum dolor sit amet, c.</p>
+        <p>Lorem ipsum dolor sit amet, c.</p>
+        <p>Lorem ipsum dolor sit amet, c.</p>
+    </div>
+    <div class="secondFooterCol">
+        <p>Lorem ipsum dolor sit amet, c.</p>
+        <p>Lorem ipsum dolor sit amet, c.</p>
+        <p>Lorem ipsum dolor sit amet, c.</p>
+        <p>Lorem ipsum dolor sit amet, c.</p>
+    </div>
+    <div class="thirdFooterCol">
+        <p>Lorem ipsum dolor sit amet, c.</p>
+        <p>Lorem ipsum dolor sit amet, c.</p>
+        <p>Lorem ipsum dolor sit amet, c.</p>
+        <p>Lorem ipsum dolor sit amet, c.</p>
+    </div>
+    <div>
+        <form method="GET" action="#">
+            <input type="text">
+            <img src="#">
+        </form>
+        <div class="footerMediaLinks">
+            <img src="#">
+            <img src="#">
+            <img src="#">
         </div>
-    </footer> -->
+    </div>
+    <div class="copyright">
+        <p>Lorem ipsum dolor sit amet, c.</p>
+    </div>
+</footer>
+ -->
     <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>

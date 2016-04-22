@@ -13,6 +13,10 @@ body {
   font-family: 'gothamBold';
   src: url(../../fonts/Gotham-Bold.ttf); }
 
+@font-face {
+  font-family: 'gothamXLight';
+  src: url(../../fonts/Gotham-XLight.ttf); }
+
 .navbar-nav > li > a,
 .navbar-brand {
   padding-top: 8px !important;
@@ -93,12 +97,13 @@ nav.navbar {
     border: 0; }
 
 section.hero {
-  height: 60em;
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../../images/heroBackground.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  color: white;
+  font-family: 'gothamBook'; }
   section.hero .heroStatement {
     font-size: 1.5em;
     text-align: center;
@@ -112,7 +117,97 @@ section.hero {
   section.hero .btnWrapper {
     width: 15em;
     height: 10em;
-    background-color: pink; }
+    padding-top: 5em; }
+    section.hero .btnWrapper button {
+      width: 10em;
+      height: 2.5em;
+      background-color: transparent;
+      border: 0;
+      padding: 0;
+      padding-top: 0.2em;
+      border: 1px solid white;
+      border-width: thin;
+      display: block;
+      margin: 0 auto;
+      color: white; }
+  section.hero div.row div.col-sm-4 {
+    margin: 2em 0em;
+    padding: 1em 0em; }
+  section.hero div.row h2 {
+    font-size: 1.75em;
+    text-align: center;
+    font-family: 'gothamBold'; }
+  section.hero div.row p {
+    text-align: center; }
+  section.hero div.row img {
+    width: 4em;
+    margin: 0 auto;
+    display: block; }
+  section.hero div.row .border {
+    border: 0.5px solid white;
+    width: 20em;
+    margin: 0 auto; }
+
+div.logoBorder {
+  height: 36px;
+  background-color: black; }
+  div.logoBorder div.logoColor {
+    width: 5em;
+    height: 36px;
+    background-color: #1d93e9;
+    float: right; }
+  div.logoBorder img {
+    height: 36px;
+    float: right;
+    margin-right: -2em; }
+
+div.carousel {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../../images/haze.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 30em;
+  font-family: "gothamBook"; }
+  div.carousel div.carousel-inner {
+    color: white; }
+    div.carousel div.carousel-inner img {
+      height: 12em;
+      width: 12em;
+      border-radius: 75px;
+      margin: 2em auto;
+      border: 4px #2cae51 solid; }
+    div.carousel div.carousel-inner p {
+      width: 20em;
+      margin: 0 auto;
+      text-align: center; }
+    div.carousel div.carousel-inner button {
+      width: 12em;
+      height: 3em;
+      padding: 0;
+      border: 0;
+      font-size: 1.4em;
+      margin: 2em auto;
+      display: block;
+      background-color: #2cae51; }
+    div.carousel div.carousel-inner .retail img {
+      border-color: #E9722D; }
+    div.carousel div.carousel-inner .retail button {
+      background-color: #E9722D; }
+    div.carousel div.carousel-inner .banks img {
+      border-color: #EFAA2E; }
+    div.carousel div.carousel-inner .banks button {
+      background-color: #EFAA2E; }
+    div.carousel div.carousel-inner .realEstate img {
+      border-color: #1E94EA; }
+    div.carousel div.carousel-inner .realEstate button {
+      background-color: #1E94EA; }
+
+section.media div.newsRoom {
+  font-family: 'gothamXLight'; }
+  section.media div.newsRoom h1 {
+    text-align: center;
+    font-size: 3em; }
 
 @media only screen and (min-width: 768px) {
   nav.navbar div.collapse ul.nav {
