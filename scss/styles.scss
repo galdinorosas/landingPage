@@ -4,6 +4,8 @@ body {
     -moz-font-smoothing: antialiased;
     -o-font-smoothing: antialiased;
     font-smoothing: antialiased;
+    width: 100%;
+    background-color: #2b2b2b;
 }
 
 @font-face {
@@ -33,7 +35,7 @@ body {
 }
 
 .navbar {
-    min-height: 36px !important;
+    min-height: 75px !important;
 }
 
 input:focus,
@@ -50,23 +52,26 @@ nav.navbar {
     margin: 0;
     background-color: black;
     border-radius: 0px;
+    min-height: 75px;
     .navbar-header {
         div.blueFill {
-            height: 36px;
-            width: 8em;
+            min-height: 75px;
+            // width: 8em;
+            width: 25%;
             background-color: #2996E7;
             float: left;
         }
         .logoAngle {
-            height: 36px;
-            margin-left: -1em;
+            height: 75px;
+            margin-left: -8em;
             float: left;
         }
         button {
             border: 0;
             margin: 0;
             border-radius: 0px;
-            height: 36px;
+            height: 75px;
+            width: 60px;
         }
         .navLogoContainer {
             color: white;
@@ -76,8 +81,21 @@ nav.navbar {
             margin-top: 0.5em;
             float: left;
             img {
-                width: 12em;
+                width: 18em;
+                margin-top: 2em;
+                margin-left: -1em;
             }
+            p {
+                margin: 1.5em -3em 0em -0.75em;
+                font-size: 1.5em;
+            }
+        }
+        .navbar-toggle .icon-bar {
+            display: block;
+            width: 100%;
+        }
+        .navbar-toggle .icon-bar+.icon-bar {
+            margin-top: 8px;
         }
     }
     div.collapse {
@@ -89,6 +107,7 @@ nav.navbar {
                 a {
                     color: white;
                     width: 12em;
+                    font-size: 1.125em;
                 }
                 div.searchCircle {
                     display: none;
@@ -111,7 +130,8 @@ nav.navbar {
                 div#searchCollapse {
                     position: absolute;
                     margin-left: -9em;
-                    margin-top: 1em;
+                    margin-left: -15em;
+                    margin-top: 3.1em;
                     input {
                         padding: 0;
                         border: 0;
@@ -138,6 +158,7 @@ nav.navbar {
     }
     div.navbar-collapse {
         border: 0;
+        padding-top: 1em;
     }
 }
 
@@ -149,22 +170,25 @@ section.hero {
     background-size: cover;
     color: white;
     font-family: 'gothamBook';
+    min-height: 1036px;
     .heroStatement {
-        font-size: 1.5em;
+        font-size: 2.75em;
         text-align: center;
-        width: 15em;
+        max-width: 100%;
         margin: 0 auto;
         color: white;
-        margin-top: 10em;
+        margin-top: 7em;
         span {
             font-family: 'gothamBold';
             color: #1D93E9;
         }
     }
     .btnWrapper {
-        width: 15em;
+        width: 100%;
         height: 10em;
         padding-top: 5em;
+        margin-top: 7em;
+        margin-bottom: 12em;
         button {
             width: 10em;
             height: 2.5em;
@@ -177,20 +201,29 @@ section.hero {
             display: block;
             margin: 0 auto;
             color: white;
+            font-size: 1.5em;
         }
     }
     div.row {
+        max-width: 1920px;
+        margin: 0 auto;
         div.col-sm-4 {
             margin: 2em 0em;
             padding: 1em 0em;
+            // margin-bottom: 27.15em;
         }
         h2 {
-            font-size: 1.75em;
+            font-size: 2.75em;
             text-align: center;
             font-family: 'gothamBold';
         }
         p {
             text-align: center;
+            font-size: 1.5em;
+            padding-left: 1em;
+            padding-right: 1em;
+            width: 16em;
+            margin: 0 auto;
         }
         // p:nth-child(1),
         // p:nth-child(2) {
@@ -198,7 +231,7 @@ section.hero {
         //     border-bottom: 1px solid white;
         // }
         img {
-            width: 4em;
+            width: 7em;
             margin: 0 auto;
             display: block;
         }
@@ -208,19 +241,15 @@ section.hero {
             margin: 0 auto;
         }
     }
-}
-
-div.logoBorder {
-    height: 36px;
-    background-color: black;
     div.logoColor {
-        width: 5em;
-        height: 36px;
-        background-color: #1d93e9;
+        width: 10%;
+        min-height: 50px;
+        background-color: #2996E7;
         float: right;
+        margin-right: -15px;
     }
-    img {
-        height: 36px;
+    .botAngle {
+        height: 50px;
         float: right;
         margin-right: -2em;
     }
@@ -236,16 +265,18 @@ div.productsContainer {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 40em;
     font-family: "gothamBook";
     padding-top: 1em;
+    min-height: 802px;
+    max-width: 1920px;
+    margin: 0 auto;
     h1 {
-        font-size: 2em;
+        font-size: 2.75em;
         background-color: transparent;
         position: relative;
         color: white;
         margin: 0;
-        margin: 0em auto;
+        margin: 3em auto;
         display: block;
         width: 5.75em;
         font-family: 'gothamXLight'
@@ -255,25 +286,35 @@ div.productsContainer {
 div.carousel {
     div.carousel-inner {
         color: white;
-        height: 37.5em;
+        min-height: 802px;
         img {
-            height: 12em;
-            width: 12em;
-            border-radius: 75px;
+            height: 20em;
+            width: 20em;
+            border-radius: 110px;
             margin: 2em auto;
             border: 4px #2cae51 solid;
+            margin-top: 10em;
+        }
+        .productsEnergy {
+            background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../../images/productsEnergy.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
         }
         p {
             width: 20em;
-            margin: 0 auto;
+            margin: 8em auto;
             text-align: center;
+            font-size: 1.5em;
+            height: 3em;
         }
         button {
             width: 12em;
             height: 3em;
             padding: 0;
             border: 0;
-            font-size: 1.4em;
+            font-size: 2em;
             margin: 2em auto;
             display: block;
             background-color: #2cae51;
@@ -309,35 +350,46 @@ div.carousel {
 section.media {
     margin: 0;
     color: black;
+    min-height: 657px;
+    max-width: 1920px;
+    margin: 0 auto;
     div.col-sm-4 {
         padding: 0;
     }
     div.newsRoom {
         font-family: 'gothamXLight';
-        height: 28em;
+        min-height: 672px;
+        background-color: white;
         div {
-            width: 20em;
-            margin: 0 auto;
+            width: 21em;
+            margin: 2em auto;
+            margin-top: 6em;
+            p {
+                font-size: 1.5em;
+            }
         }
         h1 {
             text-align: center;
-            font-size: 2em;
+            font-size: 2.75em;
+            padding: 3em 0em 1em 0em;
+            margin: 0;
         }
         h2 {
-            font-size: 1.5em;
+            font-size: 2em;
             font-family: 'gothamBold';
         }
     }
     div.papersReleaseContainer {
         background-color: #2B2B2B;
         color: white;
-        height: 28em;
+        min-height: 657px;
         div.whitePapers {
-            height: 14em;
+            min-height: 326px;
+            padding-top: 5em;
             div.paperIconContainer {
                 margin: 0 auto;
                 display: block;
-                width: 22em;
+                width: 27em;
             }
             div.wrapper {
                 width: 30em;
@@ -349,38 +401,42 @@ section.media {
                     padding-left: 2em;
                 }
                 div {
-                    width: 15em;
+                    width: 10em;
                     float: left;
                     padding: 1em;
                     font-family: 'gothamMedium';
+                    font-size: 1.5em;
+                    margin-top: 3em;
                 }
             }
             h1 {
                 text-align: center;
-                font-size: 2em;
+                font-size: 2.75em;
                 width: 8em;
                 float: right;
                 font-family: 'gothamXLight';
+                margin: 0;
+                padding-top: 0.75em;
             }
             img {
                 float: left;
-                height: 3em;
+                height: 4em;
                 margin-top: 1.5em;
             }
         }
         div.pressReleases {
             background-color: #9E9E9E;
-            height: 14em;
+            min-height: 326px;
             h1 {
                 font-family: 'gothamXLight';
-                font-size: 2em;
+                font-size: 2.75em;
                 text-align: center;
                 padding-top: 0.5em;
             }
             h2 {
                 font-family: 'gothamMedium';
-                font-size: 1.15em;
-                width: 21em;
+                font-size: 2em;
+                width: 12.1em;
                 display: block;
                 margin: 0 auto;
             }
@@ -389,10 +445,10 @@ section.media {
             }
             p {
                 font-family: 'gothamBook';
-                width: 26.75em;
+                width: 16em;
                 display: block;
-                margin: 0.5em auto;
-                font-size: 0.9em;
+                margin: 1em auto;
+                font-size: 1.5em;
             }
         }
     }
@@ -403,24 +459,26 @@ section.media {
         -o-background-size: cover;
         background-size: cover;
         background-position: 0% 83%;
-        height: 28em;
         color: white;
+        min-height: 672px;
         h1:nth-child(1) {
             font-family: 'gothamXLight';
             text-align: center;
-            font-size: 2em;
-            padding-top: 0.5em;
+            font-size: 2.75em;
+            padding-top: 2em;
+            padding-bottom: 2em;
+            margin: 0;
         }
         h2 {
             font-family: 'gothamBold';
-            font-size: 1.15em;
+            font-size: 2em;
             margin-top: 0;
         }
         div.realEstateWebinar,
         div.whatWeDo {
             width: 25em;
-            height: 7em;
             margin: 0 auto;
+            height: 15em;
             img {
                 height: 3em;
                 float: left;
@@ -432,7 +490,7 @@ section.media {
                 width: 20em;
                 p {
                     font-family: 'gothamXLight';
-                    font-size: 0.9em;
+                    font-size: 1.5em;
                 }
             }
         }
@@ -444,11 +502,11 @@ section.media {
                 margin-top: 0.5em;
             }
             div.row {
-                width: 15em;
+                width: 19em;
                 margin: 0 auto;
             }
             img {
-                height: 2em;
+                height: 3em;
                 cursor: pointer;
             }
         }
@@ -456,17 +514,16 @@ section.media {
 }
 
 .signalBackground {
-    height: 50em;
-    background: url('../../images/signalBackground.jpg') no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    min-height: 1181px;
     div.whatIsSignal {
+        background: url('../../images/signals.jpg') no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
         width: 100%;
-        height: 32em;
-        background-color: transparent;
-        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+        min-height: 749px;
+        // background-color: transparent;
         .signalWrapper {
             width: 25em;
             margin: 0 auto;
@@ -476,15 +533,16 @@ section.media {
             color: white;
             h1 {
                 font-family: 'gothamXLight';
-                font-size: 2em;
+                font-size: 2.75em;
             }
             img {
-                height: 6em;
-                margin: 0 auto;
+                height: 12em;
+                margin: 5em auto;
                 display: block;
             }
             p {
                 font-family: 'gothamBook';
+                font-size: 1.5em;
             }
             button {
                 font-family: 'gothamBook';
@@ -493,13 +551,20 @@ section.media {
                 background-color: #1E94EA;
                 border: 0;
                 padding: 0;
+                font-size: 1.5em;
+                margin-top: 1em;
             }
         }
     }
     .partners {
+        background: url('../../images/signalsBot.jpg') no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
         color: white;
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-        height: 18.1em;
+        // background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+        min-height: 432px;
         padding-top: 2em;
         // -webkit-filter: blur(5px);
         // -moz-filter: blur(5px);
@@ -509,8 +574,10 @@ section.media {
         h1 {
             margin-top: 0;
             font-family: 'gothamXLight';
-            font-size: 2em;
+            font-size: 2.75em;
             text-align: center;
+            padding-bottom: 3em;
+            padding-top: 3em;
         }
         .partnersLogos {
             width: 28em;
@@ -532,24 +599,25 @@ section.media {
 
 footer {
     background-color: #A8A8A8;
+    min-height: 570px;
     .footerLogoContainer {
-        width: 16em;
+        width: 19em;
         margin: 0 auto;
-        padding: 1em 0;
+        padding: 3em 0;
         img {
-            height: 2.5em;
+            height: 3em;
         }
         p {
             font-family: 'gothamXLight';
-            padding-top: 0.5em;
+            padding-top: 1.5em;
         }
     }
     div.row {
         margin: 0;
-        .col-sm-3 {
+        .col-xs-3 {
             margin: 0 auto;
             display: block;
-            width: 45%;
+            width: 100%;
         }
         a {
             display: block;
@@ -559,16 +627,21 @@ footer {
             text-align: center;
             cursor: pointer;
             text-decoration: none;
+            font-size: 1.5em;
         }
-        .col-sm-3:nth-child(4) {
-            width: 20em;
+        .col-xs-3:nth-child(4) {
+            form {
+                margin: 0 auto;
+                display: block;
+                width: 19em;
+            }
             input {
                 float: left;
                 border: 0;
                 padding: 0;
                 background-color: #CCCCCC;
                 height: 2.5em;
-                width: 17em;
+                width: 188px;
                 border-radius: 25px;
                 padding-left: 12px;
                 margin-top: 1em;
@@ -586,11 +659,11 @@ footer {
                 margin-top: 1em;
             }
             .footerMediaLinks {
-                margin: 0 auto;
+                margin: 2.5em auto;
                 display: block;
-                width: 9em;
+                width: 12em;
                 img {
-                    height: 2em;
+                    height: 3em;
                     cursor: pointer;
                 }
                 img:nth-child(2) {
@@ -609,9 +682,22 @@ footer {
 
 @media only screen and (min-width: 768px) {
     nav.navbar {
+        .navbar-header {
+            width: 34%;
+            display: inline-block;
+            div.blueFill {
+                width: 34%;
+            }
+        }
+        .navbar-collapse.collapse {
+            display: inline-block !important;
+        }
         div.collapse {
+            float: right;
             ul.nav {
                 float: right;
+                margin-right: 2em;
+                margin-top: 2em;
                 li {
                     div.searchCircle {
                         display: block;
@@ -621,12 +707,12 @@ footer {
                     }
                     div#searchCollapse {
                         input {
-                            width: 13em;
+                            width: 158px;
                             height: 2.25em;
                         }
                     }
                     a {
-                        width: 10em;
+                        width: 7.5em;
                         padding: 0;
                     }
                 }
@@ -635,21 +721,11 @@ footer {
                 }
             }
         }
+        div.navbar-collapse {
+            margin-top: -1em;
+        }
     }
     section.hero {
-        .heroStatement {
-            font-size: 2.25em;
-            text-align: center;
-            width: 25em;
-            margin: 0 auto;
-            color: white;
-            margin-top: 7.5em;
-        }
-        .btnWrapper {
-            button {
-                font-size: 1.2em;
-            }
-        }
         div.row {
             div.border {
                 display: none;
@@ -661,6 +737,12 @@ footer {
                 border-left: 1px solid white;
                 border-right: 1px solid white;
             }
+        }
+        div.logoColor {
+            margin-top: 21.3em;
+        }
+        .botAngle {
+            margin-top: 21.3em;
         }
     }
     div.carousel {
@@ -680,25 +762,26 @@ footer {
         div {
             color: white;
             img {
-                height: 12em;
-                width: 12em;
-                border-radius: 75px;
+                height: 17em;
+                width: 17em;
+                border-radius: 110px;
                 margin: 2em auto;
                 border: 4px #2cae51 solid;
                 display: block;
             }
             p {
-                width: 15em;
-                margin: 0 auto;
-                text-align: left;
-                height: 5em;
+                width: 11em;
+                margin: 8em auto;
+                text-align: center;
+                font-size: 1.5em;
+                height: 3em;
             }
             button {
-                width: 11em;
-                height: 2.75em;
+                width: 12em;
+                height: 3em;
                 padding: 0;
                 border: 0;
-                font-size: 1.4em;
+                font-size: 1.3em;
                 margin: 2em auto;
                 display: block;
                 background-color: #2cae51;
@@ -732,14 +815,12 @@ footer {
     }
     .signalBackground {
         div.whatIsSignal {
+            padding-top: 13em;
             .signalWrapper {
                 width: 60em;
                 img {
-                    height: 12em;
+                    height: 20em;
                     margin: 8em auto;
-                }
-                button {
-                    font-size: 1.2em;
                 }
             }
         }
@@ -761,54 +842,46 @@ footer {
         .footerLogoContainer {
             margin: 0;
             margin-left: 4em;
+            padding: 7em 0em 10em 0em;
         }
         div.row {
+            max-width: 1920px;
+            margin: 0 auto;
+            margin-bottom: 13em;
             a {
                 text-align: left;
-                width: 20em;
-                padding-left: 2.5em;
+                width: 11em;
+                margin: 1em 0em;
+                margin-left: 3em;
             }
-            div.col-sm-3:nth-child(4) {
-                margin: -1em 0 0 -4em;
+            div.col-xs-3:nth-child(4) {
+                margin: 1em 0 0 -5em;
             }
-            div.col-sm-3 {
-                width: 26%;
+            div.col-xs-3 {
+                width: 25%;
             }
         }
     }
     section.media div.videos h1:nth-child(1) {
-        padding-top: 0em;
+        padding-top: 2.5em;
     }
     section.media div.papersReleaseContainer div.pressReleases h1 {
-        padding-top: 0;
+        padding-top: 40px;
+    }
+    section.media div.videos div.videosFooter h1 {
+        margin-top: -0.5em;
     }
 }
 
 @media only screen and (min-width: 975px) {
     nav.navbar {
-        .navbar-header {
-            div.blueFill {
-                width: 16em;
-            }
-            .navLogoContainer {
-                margin-left: 8.5em;
-            }
-        }
-    }
-    section.hero {
-        .btnWrapper {
-            width: 20em;
-            button {
-                font-size: 1.4em;
-            }
-        }
-        .heroStatement {
-            margin-top: 5.5em;
-            font-size: 3em;
-        }
-        div.row {
-            p {
-                font-size: 1.1em;
+        div.collapse {
+            ul.nav {
+                li {
+                    a {
+                        width: 10em;
+                    }
+                }
             }
         }
     }
@@ -821,7 +894,6 @@ footer {
         div {
             p {
                 width: 13em;
-                font-size: 1.1em;
             }
             button {
                 font-size: 1.6em;
@@ -845,10 +917,62 @@ footer {
                 width: 90em;
                 div.col-xs-3 {
                     img {
-                        height: 6em;
+                        height: 4.5em;
                     }
                 }
             }
         }
+    }
+    footer {
+        div.row {
+            a {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .signalBackground {
+        div.whatIsSignal {
+            padding-top: 13em;
+            .signalWrapper {
+                width: 80em;
+            }
+        }
+    }
+    footer {
+        div.row {
+            a {
+                margin-left: 7em;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    section.media div.newsRoom div {
+        width: 30em;
+    }
+    section.media div.papersReleaseContainer div.pressReleases h2 {
+        width: 21.1em;
+    }
+    section.media div.papersReleaseContainer div.pressReleases p {
+        width: 28em;
+    }
+    section.media div.papersReleaseContainer div.pressReleases h1 {
+        padding-bottom: 1em;
+    }
+    section.media div.videos div.realEstateWebinar,
+    section.media div.videos div.whatWeDo {
+        width: 36em;
+    }
+    section.media div.videos div.realEstateWebinar div,
+    section.media div.videos div.whatWeDo div {
+        width: 29em;
+    }
+    section.media div.videos div.realEstateWebinar img,
+    section.media div.videos div.whatWeDo img {
+        height: 5em;
     }
 }

@@ -3,7 +3,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
-  font-smoothing: antialiased; }
+  font-smoothing: antialiased;
+  width: 100%;
+  background-color: #2b2b2b; }
 
 @font-face {
   font-family: 'gothamBook';
@@ -27,7 +29,7 @@ body {
   padding-bottom: 0 !important; }
 
 .navbar {
-  min-height: 36px !important; }
+  min-height: 75px !important; }
 
 input:focus,
 select:focus,
@@ -41,21 +43,23 @@ nav.navbar {
   padding: 0;
   margin: 0;
   background-color: black;
-  border-radius: 0px; }
+  border-radius: 0px;
+  min-height: 75px; }
   nav.navbar .navbar-header div.blueFill {
-    height: 36px;
-    width: 8em;
+    min-height: 75px;
+    width: 25%;
     background-color: #2996E7;
     float: left; }
   nav.navbar .navbar-header .logoAngle {
-    height: 36px;
-    margin-left: -1em;
+    height: 75px;
+    margin-left: -8em;
     float: left; }
   nav.navbar .navbar-header button {
     border: 0;
     margin: 0;
     border-radius: 0px;
-    height: 36px; }
+    height: 75px;
+    width: 60px; }
   nav.navbar .navbar-header .navLogoContainer {
     color: white;
     position: absolute;
@@ -64,7 +68,17 @@ nav.navbar {
     margin-top: 0.5em;
     float: left; }
     nav.navbar .navbar-header .navLogoContainer img {
-      width: 12em; }
+      width: 18em;
+      margin-top: 2em;
+      margin-left: -1em; }
+    nav.navbar .navbar-header .navLogoContainer p {
+      margin: 1.5em -3em 0em -0.75em;
+      font-size: 1.5em; }
+  nav.navbar .navbar-header .navbar-toggle .icon-bar {
+    display: block;
+    width: 100%; }
+  nav.navbar .navbar-header .navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 8px; }
   nav.navbar div.collapse {
     border-radius: 0; }
     nav.navbar div.collapse ul.nav {
@@ -72,7 +86,8 @@ nav.navbar {
       margin-right: 4em; }
       nav.navbar div.collapse ul.nav li a {
         color: white;
-        width: 12em; }
+        width: 12em;
+        font-size: 1.125em; }
       nav.navbar div.collapse ul.nav li div.searchCircle {
         display: none;
         border: 1px solid white;
@@ -92,7 +107,8 @@ nav.navbar {
       nav.navbar div.collapse ul.nav li div#searchCollapse {
         position: absolute;
         margin-left: -9em;
-        margin-top: 1em; }
+        margin-left: -15em;
+        margin-top: 3.1em; }
         nav.navbar div.collapse ul.nav li div#searchCollapse input {
           padding: 0;
           border: 0;
@@ -110,7 +126,8 @@ nav.navbar {
         margin-left: 1em;
         z-index: 1; }
   nav.navbar div.navbar-collapse {
-    border: 0; }
+    border: 0;
+    padding-top: 1em; }
 
 section.hero {
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../../images/heroBackground.jpg") no-repeat center center fixed;
@@ -119,21 +136,24 @@ section.hero {
   -o-background-size: cover;
   background-size: cover;
   color: white;
-  font-family: 'gothamBook'; }
+  font-family: 'gothamBook';
+  min-height: 1036px; }
   section.hero .heroStatement {
-    font-size: 1.5em;
+    font-size: 2.75em;
     text-align: center;
-    width: 15em;
+    max-width: 100%;
     margin: 0 auto;
     color: white;
-    margin-top: 10em; }
+    margin-top: 7em; }
     section.hero .heroStatement span {
       font-family: 'gothamBold';
       color: #1D93E9; }
   section.hero .btnWrapper {
-    width: 15em;
+    width: 100%;
     height: 10em;
-    padding-top: 5em; }
+    padding-top: 5em;
+    margin-top: 7em;
+    margin-bottom: 12em; }
     section.hero .btnWrapper button {
       width: 10em;
       height: 2.5em;
@@ -145,35 +165,41 @@ section.hero {
       border-width: thin;
       display: block;
       margin: 0 auto;
-      color: white; }
-  section.hero div.row div.col-sm-4 {
-    margin: 2em 0em;
-    padding: 1em 0em; }
-  section.hero div.row h2 {
-    font-size: 1.75em;
-    text-align: center;
-    font-family: 'gothamBold'; }
-  section.hero div.row p {
-    text-align: center; }
-  section.hero div.row img {
-    width: 4em;
-    margin: 0 auto;
-    display: block; }
-  section.hero div.row .border {
-    border: 0.5px solid white;
-    width: 20em;
+      color: white;
+      font-size: 1.5em; }
+  section.hero div.row {
+    max-width: 1920px;
     margin: 0 auto; }
-
-div.logoBorder {
-  height: 36px;
-  background-color: black; }
-  div.logoBorder div.logoColor {
-    width: 5em;
-    height: 36px;
-    background-color: #1d93e9;
-    float: right; }
-  div.logoBorder img {
-    height: 36px;
+    section.hero div.row div.col-sm-4 {
+      margin: 2em 0em;
+      padding: 1em 0em; }
+    section.hero div.row h2 {
+      font-size: 2.75em;
+      text-align: center;
+      font-family: 'gothamBold'; }
+    section.hero div.row p {
+      text-align: center;
+      font-size: 1.5em;
+      padding-left: 1em;
+      padding-right: 1em;
+      width: 16em;
+      margin: 0 auto; }
+    section.hero div.row img {
+      width: 7em;
+      margin: 0 auto;
+      display: block; }
+    section.hero div.row .border {
+      border: 0.5px solid white;
+      width: 20em;
+      margin: 0 auto; }
+  section.hero div.logoColor {
+    width: 10%;
+    min-height: 50px;
+    background-color: #2996E7;
+    float: right;
+    margin-right: -15px; }
+  section.hero .botAngle {
+    height: 50px;
     float: right;
     margin-right: -2em; }
 
@@ -186,39 +212,50 @@ div.productsContainer {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 40em;
   font-family: "gothamBook";
-  padding-top: 1em; }
+  padding-top: 1em;
+  min-height: 802px;
+  max-width: 1920px;
+  margin: 0 auto; }
   div.productsContainer h1 {
-    font-size: 2em;
+    font-size: 2.75em;
     background-color: transparent;
     position: relative;
     color: white;
     margin: 0;
-    margin: 0em auto;
+    margin: 3em auto;
     display: block;
     width: 5.75em;
     font-family: 'gothamXLight'; }
 
 div.carousel div.carousel-inner {
   color: white;
-  height: 37.5em; }
+  min-height: 802px; }
   div.carousel div.carousel-inner img {
-    height: 12em;
-    width: 12em;
-    border-radius: 75px;
+    height: 20em;
+    width: 20em;
+    border-radius: 110px;
     margin: 2em auto;
-    border: 4px #2cae51 solid; }
+    border: 4px #2cae51 solid;
+    margin-top: 10em; }
+  div.carousel div.carousel-inner .productsEnergy {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../../images/productsEnergy.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
   div.carousel div.carousel-inner p {
     width: 20em;
-    margin: 0 auto;
-    text-align: center; }
+    margin: 8em auto;
+    text-align: center;
+    font-size: 1.5em;
+    height: 3em; }
   div.carousel div.carousel-inner button {
     width: 12em;
     height: 3em;
     padding: 0;
     border: 0;
-    font-size: 1.4em;
+    font-size: 2em;
     margin: 2em auto;
     display: block;
     background-color: #2cae51;
@@ -238,31 +275,41 @@ div.carousel div.carousel-inner {
 
 section.media {
   margin: 0;
-  color: black; }
+  color: black;
+  min-height: 657px;
+  max-width: 1920px;
+  margin: 0 auto; }
   section.media div.col-sm-4 {
     padding: 0; }
   section.media div.newsRoom {
     font-family: 'gothamXLight';
-    height: 28em; }
+    min-height: 672px;
+    background-color: white; }
     section.media div.newsRoom div {
-      width: 20em;
-      margin: 0 auto; }
+      width: 21em;
+      margin: 2em auto;
+      margin-top: 6em; }
+      section.media div.newsRoom div p {
+        font-size: 1.5em; }
     section.media div.newsRoom h1 {
       text-align: center;
-      font-size: 2em; }
+      font-size: 2.75em;
+      padding: 3em 0em 1em 0em;
+      margin: 0; }
     section.media div.newsRoom h2 {
-      font-size: 1.5em;
+      font-size: 2em;
       font-family: 'gothamBold'; }
   section.media div.papersReleaseContainer {
     background-color: #2B2B2B;
     color: white;
-    height: 28em; }
+    min-height: 657px; }
     section.media div.papersReleaseContainer div.whitePapers {
-      height: 14em; }
+      min-height: 326px;
+      padding-top: 5em; }
       section.media div.papersReleaseContainer div.whitePapers div.paperIconContainer {
         margin: 0 auto;
         display: block;
-        width: 22em; }
+        width: 27em; }
       section.media div.papersReleaseContainer div.whitePapers div.wrapper {
         width: 30em;
         display: block;
@@ -272,42 +319,46 @@ section.media {
           border-left: 1px solid white;
           padding-left: 2em; }
         section.media div.papersReleaseContainer div.whitePapers div.wrapper div {
-          width: 15em;
+          width: 10em;
           float: left;
           padding: 1em;
-          font-family: 'gothamMedium'; }
+          font-family: 'gothamMedium';
+          font-size: 1.5em;
+          margin-top: 3em; }
       section.media div.papersReleaseContainer div.whitePapers h1 {
         text-align: center;
-        font-size: 2em;
+        font-size: 2.75em;
         width: 8em;
         float: right;
-        font-family: 'gothamXLight'; }
+        font-family: 'gothamXLight';
+        margin: 0;
+        padding-top: 0.75em; }
       section.media div.papersReleaseContainer div.whitePapers img {
         float: left;
-        height: 3em;
+        height: 4em;
         margin-top: 1.5em; }
     section.media div.papersReleaseContainer div.pressReleases {
       background-color: #9E9E9E;
-      height: 14em; }
+      min-height: 326px; }
       section.media div.papersReleaseContainer div.pressReleases h1 {
         font-family: 'gothamXLight';
-        font-size: 2em;
+        font-size: 2.75em;
         text-align: center;
         padding-top: 0.5em; }
       section.media div.papersReleaseContainer div.pressReleases h2 {
         font-family: 'gothamMedium';
-        font-size: 1.15em;
-        width: 21em;
+        font-size: 2em;
+        width: 12.1em;
         display: block;
         margin: 0 auto; }
       section.media div.papersReleaseContainer div.pressReleases .learn {
         cursor: pointer; }
       section.media div.papersReleaseContainer div.pressReleases p {
         font-family: 'gothamBook';
-        width: 26.75em;
+        width: 16em;
         display: block;
-        margin: 0.5em auto;
-        font-size: 0.9em; }
+        margin: 1em auto;
+        font-size: 1.5em; }
   section.media div.videos {
     background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../../images/videos.jpg") no-repeat center center;
     -webkit-background-size: cover;
@@ -315,22 +366,24 @@ section.media {
     -o-background-size: cover;
     background-size: cover;
     background-position: 0% 83%;
-    height: 28em;
-    color: white; }
+    color: white;
+    min-height: 672px; }
     section.media div.videos h1:nth-child(1) {
       font-family: 'gothamXLight';
       text-align: center;
-      font-size: 2em;
-      padding-top: 0.5em; }
+      font-size: 2.75em;
+      padding-top: 2em;
+      padding-bottom: 2em;
+      margin: 0; }
     section.media div.videos h2 {
       font-family: 'gothamBold';
-      font-size: 1.15em;
+      font-size: 2em;
       margin-top: 0; }
     section.media div.videos div.realEstateWebinar,
     section.media div.videos div.whatWeDo {
       width: 25em;
-      height: 7em;
-      margin: 0 auto; }
+      margin: 0 auto;
+      height: 15em; }
       section.media div.videos div.realEstateWebinar img,
       section.media div.videos div.whatWeDo img {
         height: 3em;
@@ -344,30 +397,28 @@ section.media {
         section.media div.videos div.realEstateWebinar div p,
         section.media div.videos div.whatWeDo div p {
           font-family: 'gothamXLight';
-          font-size: 0.9em; }
+          font-size: 1.5em; }
     section.media div.videos div.whatWeDo {
       border-bottom: 1px solid white; }
     section.media div.videos div.videosFooter h1 {
       margin-top: 0.5em; }
     section.media div.videos div.videosFooter div.row {
-      width: 15em;
+      width: 19em;
       margin: 0 auto; }
     section.media div.videos div.videosFooter img {
-      height: 2em;
+      height: 3em;
       cursor: pointer; }
 
 .signalBackground {
-  height: 50em;
-  background: url("../../images/signalBackground.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  min-height: 1181px; }
   .signalBackground div.whatIsSignal {
+    background: url("../../images/signals.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     width: 100%;
-    height: 32em;
-    background-color: transparent;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); }
+    min-height: 749px; }
     .signalBackground div.whatIsSignal .signalWrapper {
       width: 25em;
       margin: 0 auto;
@@ -377,30 +428,39 @@ section.media {
       color: white; }
       .signalBackground div.whatIsSignal .signalWrapper h1 {
         font-family: 'gothamXLight';
-        font-size: 2em; }
+        font-size: 2.75em; }
       .signalBackground div.whatIsSignal .signalWrapper img {
-        height: 6em;
-        margin: 0 auto;
+        height: 12em;
+        margin: 5em auto;
         display: block; }
       .signalBackground div.whatIsSignal .signalWrapper p {
-        font-family: 'gothamBook'; }
+        font-family: 'gothamBook';
+        font-size: 1.5em; }
       .signalBackground div.whatIsSignal .signalWrapper button {
         font-family: 'gothamBook';
         width: 8em;
         height: 2em;
         background-color: #1E94EA;
         border: 0;
-        padding: 0; }
+        padding: 0;
+        font-size: 1.5em;
+        margin-top: 1em; }
   .signalBackground .partners {
+    background: url("../../images/signalsBot.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-    height: 18.1em;
+    min-height: 432px;
     padding-top: 2em; }
     .signalBackground .partners h1 {
       margin-top: 0;
       font-family: 'gothamXLight';
-      font-size: 2em;
-      text-align: center; }
+      font-size: 2.75em;
+      text-align: center;
+      padding-bottom: 3em;
+      padding-top: 3em; }
     .signalBackground .partners .partnersLogos {
       width: 28em;
       margin: 0em auto;
@@ -415,22 +475,23 @@ section.media {
           display: block; }
 
 footer {
-  background-color: #A8A8A8; }
+  background-color: #A8A8A8;
+  min-height: 570px; }
   footer .footerLogoContainer {
-    width: 16em;
+    width: 19em;
     margin: 0 auto;
-    padding: 1em 0; }
+    padding: 3em 0; }
     footer .footerLogoContainer img {
-      height: 2.5em; }
+      height: 3em; }
     footer .footerLogoContainer p {
       font-family: 'gothamXLight';
-      padding-top: 0.5em; }
+      padding-top: 1.5em; }
   footer div.row {
     margin: 0; }
-    footer div.row .col-sm-3 {
+    footer div.row .col-xs-3 {
       margin: 0 auto;
       display: block;
-      width: 45%; }
+      width: 100%; }
     footer div.row a {
       display: block;
       font-family: 'gothamXLight';
@@ -438,68 +499,75 @@ footer {
       line-height: 1.75em;
       text-align: center;
       cursor: pointer;
-      text-decoration: none; }
-    footer div.row .col-sm-3:nth-child(4) {
-      width: 20em; }
-      footer div.row .col-sm-3:nth-child(4) input {
-        float: left;
-        border: 0;
-        padding: 0;
-        background-color: #CCCCCC;
-        height: 2.5em;
-        width: 17em;
-        border-radius: 25px;
-        padding-left: 12px;
-        margin-top: 1em; }
-      footer div.row .col-sm-3:nth-child(4) div.footerSearchIcon {
-        border: 1px solid #525252;
-        border-radius: 25px;
-        height: 25px;
-        width: 25px;
-        cursor: pointer;
-        background: url("../../images/footerSearchIcon.png") no-repeat center center;
-        background-size: 12px 12px;
-        float: left;
-        margin-left: -2.5em;
-        margin-top: 1em; }
-      footer div.row .col-sm-3:nth-child(4) .footerMediaLinks {
-        margin: 0 auto;
-        display: block;
-        width: 9em; }
-        footer div.row .col-sm-3:nth-child(4) .footerMediaLinks img {
-          height: 2em;
-          cursor: pointer; }
-        footer div.row .col-sm-3:nth-child(4) .footerMediaLinks img:nth-child(2) {
-          margin: 2em 1em; }
+      text-decoration: none;
+      font-size: 1.5em; }
+    footer div.row .col-xs-3:nth-child(4) form {
+      margin: 0 auto;
+      display: block;
+      width: 19em; }
+    footer div.row .col-xs-3:nth-child(4) input {
+      float: left;
+      border: 0;
+      padding: 0;
+      background-color: #CCCCCC;
+      height: 2.5em;
+      width: 188px;
+      border-radius: 25px;
+      padding-left: 12px;
+      margin-top: 1em; }
+    footer div.row .col-xs-3:nth-child(4) div.footerSearchIcon {
+      border: 1px solid #525252;
+      border-radius: 25px;
+      height: 25px;
+      width: 25px;
+      cursor: pointer;
+      background: url("../../images/footerSearchIcon.png") no-repeat center center;
+      background-size: 12px 12px;
+      float: left;
+      margin-left: -2.5em;
+      margin-top: 1em; }
+    footer div.row .col-xs-3:nth-child(4) .footerMediaLinks {
+      margin: 2.5em auto;
+      display: block;
+      width: 12em; }
+      footer div.row .col-xs-3:nth-child(4) .footerMediaLinks img {
+        height: 3em;
+        cursor: pointer; }
+      footer div.row .col-xs-3:nth-child(4) .footerMediaLinks img:nth-child(2) {
+        margin: 2em 1em; }
   footer div.copyright p {
     text-align: center;
     margin-bottom: 0; }
 
 @media only screen and (min-width: 768px) {
-  nav.navbar div.collapse ul.nav {
+  nav.navbar .navbar-header {
+    width: 34%;
+    display: inline-block; }
+    nav.navbar .navbar-header div.blueFill {
+      width: 34%; }
+  nav.navbar .navbar-collapse.collapse {
+    display: inline-block !important; }
+  nav.navbar div.collapse {
     float: right; }
-    nav.navbar div.collapse ul.nav li div.searchCircle {
-      display: block;
-      position: relative;
-      margin: 0.6em 0 0 0;
-      border-radius: 25px; }
-    nav.navbar div.collapse ul.nav li div#searchCollapse input {
-      width: 13em;
-      height: 2.25em; }
-    nav.navbar div.collapse ul.nav li a {
-      width: 10em;
-      padding: 0; }
-    nav.navbar div.collapse ul.nav li:nth-child(4) {
-      margin-right: 1.8em; }
-  section.hero .heroStatement {
-    font-size: 2.25em;
-    text-align: center;
-    width: 25em;
-    margin: 0 auto;
-    color: white;
-    margin-top: 7.5em; }
-  section.hero .btnWrapper button {
-    font-size: 1.2em; }
+    nav.navbar div.collapse ul.nav {
+      float: right;
+      margin-right: 2em;
+      margin-top: 2em; }
+      nav.navbar div.collapse ul.nav li div.searchCircle {
+        display: block;
+        position: relative;
+        margin: 0.6em 0 0 0;
+        border-radius: 25px; }
+      nav.navbar div.collapse ul.nav li div#searchCollapse input {
+        width: 158px;
+        height: 2.25em; }
+      nav.navbar div.collapse ul.nav li a {
+        width: 7.5em;
+        padding: 0; }
+      nav.navbar div.collapse ul.nav li:nth-child(4) {
+        margin-right: 1.8em; }
+  nav.navbar div.navbar-collapse {
+    margin-top: -1em; }
   section.hero div.row div.border {
     display: none; }
   section.hero div.row img {
@@ -507,6 +575,10 @@ footer {
   section.hero div.row div.signals {
     border-left: 1px solid white;
     border-right: 1px solid white; }
+  section.hero div.logoColor {
+    margin-top: 21.3em; }
+  section.hero .botAngle {
+    margin-top: 21.3em; }
   div.carousel {
     display: none; }
   div.products-background {
@@ -523,23 +595,24 @@ footer {
     div.products-background div {
       color: white; }
       div.products-background div img {
-        height: 12em;
-        width: 12em;
-        border-radius: 75px;
+        height: 17em;
+        width: 17em;
+        border-radius: 110px;
         margin: 2em auto;
         border: 4px #2cae51 solid;
         display: block; }
       div.products-background div p {
-        width: 15em;
-        margin: 0 auto;
-        text-align: left;
-        height: 5em; }
-      div.products-background div button {
         width: 11em;
-        height: 2.75em;
+        margin: 8em auto;
+        text-align: center;
+        font-size: 1.5em;
+        height: 3em; }
+      div.products-background div button {
+        width: 12em;
+        height: 3em;
         padding: 0;
         border: 0;
-        font-size: 1.4em;
+        font-size: 1.3em;
         margin: 2em auto;
         display: block;
         background-color: #2cae51;
@@ -556,13 +629,13 @@ footer {
       border-color: #1E94EA; }
     div.products-background .realEstate button {
       background-color: #1E94EA; }
-  .signalBackground div.whatIsSignal .signalWrapper {
-    width: 60em; }
-    .signalBackground div.whatIsSignal .signalWrapper img {
-      height: 12em;
-      margin: 8em auto; }
-    .signalBackground div.whatIsSignal .signalWrapper button {
-      font-size: 1.2em; }
+  .signalBackground div.whatIsSignal {
+    padding-top: 13em; }
+    .signalBackground div.whatIsSignal .signalWrapper {
+      width: 60em; }
+      .signalBackground div.whatIsSignal .signalWrapper img {
+        height: 20em;
+        margin: 8em auto; }
   .signalBackground .partners .partnersLogos {
     width: 60em; }
     .signalBackground .partners .partnersLogos div.col-xs-3 img {
@@ -571,39 +644,35 @@ footer {
     margin-top: -2em; }
   footer .footerLogoContainer {
     margin: 0;
-    margin-left: 4em; }
-  footer div.row a {
-    text-align: left;
-    width: 20em;
-    padding-left: 2.5em; }
-  footer div.row div.col-sm-3:nth-child(4) {
-    margin: -1em 0 0 -4em; }
-  footer div.row div.col-sm-3 {
-    width: 26%; }
+    margin-left: 4em;
+    padding: 7em 0em 10em 0em; }
+  footer div.row {
+    max-width: 1920px;
+    margin: 0 auto;
+    margin-bottom: 13em; }
+    footer div.row a {
+      text-align: left;
+      width: 11em;
+      margin: 1em 0em;
+      margin-left: 3em; }
+    footer div.row div.col-xs-3:nth-child(4) {
+      margin: 1em 0 0 -5em; }
+    footer div.row div.col-xs-3 {
+      width: 25%; }
   section.media div.videos h1:nth-child(1) {
-    padding-top: 0em; }
+    padding-top: 2.5em; }
   section.media div.papersReleaseContainer div.pressReleases h1 {
-    padding-top: 0; } }
+    padding-top: 40px; }
+  section.media div.videos div.videosFooter h1 {
+    margin-top: -0.5em; } }
 
 @media only screen and (min-width: 975px) {
-  nav.navbar .navbar-header div.blueFill {
-    width: 16em; }
-  nav.navbar .navbar-header .navLogoContainer {
-    margin-left: 8.5em; }
-  section.hero .btnWrapper {
-    width: 20em; }
-    section.hero .btnWrapper button {
-      font-size: 1.4em; }
-  section.hero .heroStatement {
-    margin-top: 5.5em;
-    font-size: 3em; }
-  section.hero div.row p {
-    font-size: 1.1em; }
+  nav.navbar div.collapse ul.nav li a {
+    width: 10em; }
   div.productsContainer h1 {
     font-size: 2.5em; }
   div.products-background div p {
-    width: 13em;
-    font-size: 1.1em; }
+    width: 13em; }
   div.products-background div button {
     font-size: 1.6em; }
   .signalBackground div.whatIsSignal .signalWrapper {
@@ -615,4 +684,33 @@ footer {
   .signalBackground .partners .partnersLogos {
     width: 90em; }
     .signalBackground .partners .partnersLogos div.col-xs-3 img {
-      height: 6em; } }
+      height: 4.5em; }
+  footer div.row a {
+    padding-left: 0; } }
+
+@media only screen and (min-width: 1200px) {
+  .signalBackground div.whatIsSignal {
+    padding-top: 13em; }
+    .signalBackground div.whatIsSignal .signalWrapper {
+      width: 80em; }
+  footer div.row a {
+    margin-left: 7em; } }
+
+@media only screen and (min-width: 1600px) {
+  section.media div.newsRoom div {
+    width: 30em; }
+  section.media div.papersReleaseContainer div.pressReleases h2 {
+    width: 21.1em; }
+  section.media div.papersReleaseContainer div.pressReleases p {
+    width: 28em; }
+  section.media div.papersReleaseContainer div.pressReleases h1 {
+    padding-bottom: 1em; }
+  section.media div.videos div.realEstateWebinar,
+  section.media div.videos div.whatWeDo {
+    width: 36em; }
+  section.media div.videos div.realEstateWebinar div,
+  section.media div.videos div.whatWeDo div {
+    width: 29em; }
+  section.media div.videos div.realEstateWebinar img,
+  section.media div.videos div.whatWeDo img {
+    height: 5em; } }
