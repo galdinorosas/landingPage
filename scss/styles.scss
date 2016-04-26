@@ -45,6 +45,11 @@ button:focus {
     outline: none;
 }
 
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: none !important; 
+}
+
 nav.navbar {
     font-family: 'gothamBook';
     border: 0;
@@ -945,6 +950,11 @@ footer {
         div.row {
             a {
                 margin-left: 7em;
+            }
+            .firstFooterCol {
+                a:nth-child(3) {
+                    width: 16em;
+                }
             }
         }
     }
