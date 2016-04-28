@@ -504,7 +504,31 @@ footer {
       text-align: center;
       cursor: pointer;
       text-decoration: none;
-      font-size: 1.5em; }
+      font-size: 1.5em;
+      margin: 0 auto; }
+    footer div.row div.firstFooterCol a:nth-child(1) {
+      width: 11em; }
+    footer div.row div.firstFooterCol a:nth-child(2) {
+      width: 7em; }
+    footer div.row div.firstFooterCol a:nth-child(3) {
+      width: 16em; }
+    footer div.row div.firstFooterCol a:nth-child(4) {
+      width: 5em; }
+    footer div.row div.secondFooterCol a:nth-child(1),
+    footer div.row div.secondFooterCol a:nth-child(2) {
+      width: 6em; }
+    footer div.row div.secondFooterCol a:nth-child(3) {
+      width: 10em; }
+    footer div.row div.secondFooterCol a:nth-child(4) {
+      width: 4em; }
+    footer div.row div.thirdFooterCol a:nth-child(1) {
+      width: 7em; }
+    footer div.row div.thirdFooterCol a:nth-child(2) {
+      width: 5em; }
+    footer div.row div.thirdFooterCol a:nth-child(3) {
+      width: 8em; }
+    footer div.row div.thirdFooterCol a:nth-child(4) {
+      width: 10em; }
     footer div.row .col-xs-3:nth-child(4) form {
       margin: 0 auto;
       display: block;

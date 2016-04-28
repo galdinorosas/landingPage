@@ -47,7 +47,7 @@ button:focus {
 
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
-    background-color: none !important; 
+    background-color: none !important;
 }
 
 nav.navbar {
@@ -633,6 +633,51 @@ footer {
             cursor: pointer;
             text-decoration: none;
             font-size: 1.5em;
+            margin: 0 auto;
+        }
+        div.firstFooterCol {
+            a:nth-child(1) {
+                width: 11em;
+            }
+            a:nth-child(2) {
+                width: 7em;
+            }
+            a:nth-child(3) {
+                width: 16em;
+            }
+            a:nth-child(4) {
+                width: 5em;
+            }
+        }
+        div.secondFooterCol {
+            a:nth-child(1),
+            a:nth-child(2),
+            {
+                width: 6em;
+            }
+
+            a:nth-child(3){
+                width: 10em;
+            }
+            a:nth-child(4){
+                width: 4em;
+            }
+        }
+
+        div.thirdFooterCol{
+            a:nth-child(1){
+                width: 7em;
+            }
+
+            a:nth-child(2){
+                width: 5em;
+            }
+            a:nth-child(3){
+                width: 8em;
+            }
+            a:nth-child(4){
+                width: 10em;
+            }
         }
         .col-xs-3:nth-child(4) {
             form {
